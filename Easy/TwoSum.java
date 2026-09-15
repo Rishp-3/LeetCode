@@ -14,7 +14,6 @@ public class TwoSum {
             }
         }
 
-        // In case there is no solution
         return null;
     }
 
