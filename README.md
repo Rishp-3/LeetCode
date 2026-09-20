@@ -225,7 +225,6 @@ Feel free to:
 <a href="https://github.com/Rishp-3">
   <img src="https://img.shields.io/badge/GitHub-Rishp--3-black?style=for-the-badge&logo=github" />
 </a>
-
 </p>
 
 ---
