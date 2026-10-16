@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2173403522,
+  "last_submission_id": 2173484877,
   "problems": {
     "1": {
       "description": "You are given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.\n\nYou may assume that each input would have ***exactly* one solution**, and you may not use the *same* element twice.\n\nYou can return the answer in any order.\n\n**Example 1:**\n\n```text\n\nInput: nums = [2,7,11,15], target = 9\nOutput: [0,1]\nExplanation: Because nums[0] + nums[1] == 9, we return [0, 1].\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [3,2,4], target = 6\nOutput: [1,2]\n\n```\n\n**Example 3:**\n\n```text\n\nInput: nums = [3,3], target = 6\nOutput: [0,1]\n\n```\n\n**Constraints:**\n\n- `2 <= nums.length <= 10^4`\n- `-10^9 <= nums[i] <= 10^9`\n- `-10^9 <= target <= 10^9`\n- **Only one valid answer exists.**\n\n **Follow-up: **Can you come up with an algorithm that is less than `O(n^2)` time complexity?",
@@ -969,6 +969,20 @@
         "Matrix"
       ]
     },
+    "5": {
+      "description": "Given a string `s`, return *the longest* *palindromic* *substring* in `s`.\n\n**Example 1:**\n\n```text\n\nInput: s = \"babad\"\nOutput: \"bab\"\nExplanation: \"aba\" is also a valid answer.\n\n```\n\n**Example 2:**\n\n```text\n\nInput: s = \"cbbd\"\nOutput: \"bb\"\n\n```\n\n**Constraints:**\n\n- `1 <= s.length <= 1000`\n- `s` consist of only digits and English letters.",
+      "difficulty": "Medium",
+      "first_solved": "2026-10-16",
+      "id": 5,
+      "slug": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ]
+    },
     "51": {
       "description": "The **n-queens** puzzle is the problem of placing `n` queens on an `n x n` chessboard such that no two queens attack each other.\n\nGiven an integer `n`, return *all distinct solutions to the **n-queens puzzle***. You may return the answer in **any order**.\n\nEach solution contains a distinct board configuration of the n-queens' placement, where `'Q'` and `'.'` both indicate a queen and an empty space, respectively.\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2020/11/13/queens.jpg)\n\n```text\n\nInput: n = 4\nOutput: [[\".Q..\",\"...Q\",\"Q...\",\"..Q.\"],[\"..Q.\",\"Q...\",\"...Q\",\".Q..\"]]\nExplanation: There exist two distinct solutions to the 4-queens puzzle as shown above\n\n```\n\n**Example 2:**\n\n```text\n\nInput: n = 1\nOutput: [[\"Q\"]]\n\n```\n\n**Constraints:**\n\n- `1 <= n <= 9`",
       "difficulty": "Hard",
@@ -1300,6 +1314,7 @@
     "length-of-last-word": "58",
     "linked-list-cycle": "141",
     "longest-common-prefix": "14",
+    "longest-palindromic-substring": "5",
     "longest-substring-without-repeating-characters": "3",
     "majority-element": "169",
     "max-dot-product-of-two-subsequences": "1458",
