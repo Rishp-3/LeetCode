@@ -1,11 +1,14 @@
-
-name: Sync LeetCode submissions
+name: LeetCode Sync
 
 on:
   schedule:
-    # Run every 6 hours (UTC)
-    - cron: "17 */6 * * *"
+    - cron: "17 3 * * *"   # daily at 03:17 UTC; edit to taste
   workflow_dispatch:
+    inputs:
+      full_sync:
+        description: "Re-scan the entire submission history (use for the first run)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -16,61 +19,40 @@ concurrency:
 
 jobs:
   sync:
-    name: Sync accepted Java solutions
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-
+    timeout-minutes: 120
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install "requests>=2.32.0,<3.0.0"
-
-      - name: Validate configuration
+      - name: Sync accepted Java submissions
         env:
           LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
           LEETCODE_CSRF_TOKEN: ${{ secrets.LEETCODE_CSRF_TOKEN }}
+          FULL_SYNC: ${{ github.event.inputs.full_sync == 'true' && 'true' || 'false' }}
+          ARCHIVE_ALL_ACCEPTED: "true"   # set "false" to keep only the latest Solution.java
+          CREATE_MAIN_STUB: "true"       # only ever creates a missing Main.java
+        run: python scripts/leetcode_sync.py
+
+      - name: Safety check - Main.java must be untouched
         run: |
-          if [ -z "$LEETCODE_SESSION" ]; then
-            echo "::error::LEETCODE_SESSION secret is missing."
+          if git diff --name-only --diff-filter=MDR HEAD | grep -E '(^|/)Main\.java$'; then
+            echo "::error::An existing Main.java was modified. Aborting without commit."
             exit 1
           fi
 
-          if [ ! -f scripts/sync_leetcode.py ]; then
-            echo "::error::scripts/sync_leetcode.py not found."
-            exit 1
-          fi
-
-          echo "Configuration validation passed."
-
-      - name: Sync accepted Java solutions
-        env:
-          LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
-          LEETCODE_CSRF_TOKEN: ${{ secrets.LEETCODE_CSRF_TOKEN }}
-          LEETCODE_USERNAME: rishp_3
-        run: python scripts/sync_leetcode.py
-
-      - name: Commit and push changes
+      - name: Commit and push
         run: |
-          git add -- Easy Medium Hard
-
-          if git diff --cached --quiet; then
-            echo "No solution changes to commit."
-            exit 0
-          fi
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git commit -m "chore: sync accepted LeetCode solutions"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(sync): update LeetCode solutions"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
