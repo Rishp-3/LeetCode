@@ -1,0 +1,2 @@
+# Keep submitted Java source byte-for-byte (no CRLF/LF normalisation)
+*.java -text
