@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2173484877,
+  "last_submission_id": 2178216081,
   "problems": {
     "1": {
       "description": "You are given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.\n\nYou may assume that each input would have ***exactly* one solution**, and you may not use the *same* element twice.\n\nYou can return the answer in any order.\n\n**Example 1:**\n\n```text\n\nInput: nums = [2,7,11,15], target = 9\nOutput: [0,1]\nExplanation: Because nums[0] + nums[1] == 9, we return [0, 1].\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [3,2,4], target = 6\nOutput: [1,2]\n\n```\n\n**Example 3:**\n\n```text\n\nInput: nums = [3,3], target = 6\nOutput: [0,1]\n\n```\n\n**Constraints:**\n\n- `2 <= nums.length <= 10^4`\n- `-10^9 <= nums[i] <= 10^9`\n- `-10^9 <= target <= 10^9`\n- **Only one valid answer exists.**\n\n **Follow-up: **Can you come up with an algorithm that is less than `O(n^2)` time complexity?",
@@ -55,6 +55,19 @@
         "Monotonic Stack"
       ]
     },
+    "102": {
+      "description": "Given the `root` of a binary tree, return *the level order traversal of its nodes' values*. (i.e., from left to right, level by level).\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg)\n\n```text\n\nInput: root = [3,9,20,null,null,15,7]\nOutput: [[3],[9,20],[15,7]]\n\n```\n\n**Example 2:**\n\n```text\n\nInput: root = [1]\nOutput: [[1]]\n\n```\n\n**Example 3:**\n\n```text\n\nInput: root = []\nOutput: []\n\n```\n\n**Constraints:**\n\n- The number of nodes in the tree is in the range `[0, 2000]`.\n- `-1000 <= Node.val <= 1000`",
+      "difficulty": "Medium",
+      "first_solved": "2026-10-19",
+      "id": 102,
+      "slug": "binary-tree-level-order-traversal",
+      "title": "Binary Tree Level Order Traversal",
+      "topics": [
+        "Tree",
+        "Breadth-First Search",
+        "Binary Tree"
+      ]
+    },
     "1021": {
       "description": "A valid parentheses string is either empty `\"\"`, `\"(\" + A + \")\"`, or `A + B`, where `A` and `B` are valid parentheses strings, and `+` represents string concatenation.\n\n- For example, `\"\"`, `\"()\"`, `\"(())()\"`, and `\"(()(()))\"` are all valid parentheses strings.\n\nA valid parentheses string `s` is primitive if it is nonempty, and there does not exist a way to split it into `s = A + B`, with `A` and `B` nonempty valid parentheses strings.\n\nGiven a valid parentheses string `s`, consider its primitive decomposition: `s = P1 + P2 + ... + Pk`, where `Pi` are primitive valid parentheses strings.\n\nReturn `s` *after removing the outermost parentheses of every primitive string in the primitive decomposition of *`s`.\n\n**Example 1:**\n\n```text\n\nInput: s = \"(()())(())\"\nOutput: \"()()()\"\nExplanation:\nThe input string is \"(()())(())\", with primitive decomposition \"(()())\" + \"(())\".\nAfter removing outer parentheses of each part, this is \"()()\" + \"()\" = \"()()()\".\n\n```\n\n**Example 2:**\n\n```text\n\nInput: s = \"(()())(())(()(()))\"\nOutput: \"()()()()(())\"\nExplanation:\nThe input string is \"(()())(())(()(()))\", with primitive decomposition \"(()())\" + \"(())\" + \"(()(()))\".\nAfter removing outer parentheses of each part, this is \"()()\" + \"()\" + \"()(())\" = \"()()()()(())\".\n\n```\n\n**Example 3:**\n\n```text\n\nInput: s = \"()()\"\nOutput: \"\"\nExplanation:\nThe input string is \"()()\", with primitive decomposition \"()\" + \"()\".\nAfter removing outer parentheses of each part, this is \"\" + \"\" = \"\".\n\n```\n\n**Constraints:**\n\n- `1 <= s.length <= 10^5`\n- `s[i]` is either `'('` or `')'`.\n- `s` is a valid parentheses string.",
       "difficulty": "Easy",
@@ -66,6 +79,20 @@
         "String",
         "Stack",
         "Bracket Sequences"
+      ]
+    },
+    "104": {
+      "description": "Given the `root` of a binary tree, return *its maximum depth*.\n\nA binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg)\n\n```text\n\nInput: root = [3,9,20,null,null,15,7]\nOutput: 3\n\n```\n\n**Example 2:**\n\n```text\n\nInput: root = [1,null,2]\nOutput: 2\n\n```\n\n**Constraints:**\n\n- The number of nodes in the tree is in the range `[0, 10^4]`.\n- `-100 <= Node.val <= 100`",
+      "difficulty": "Easy",
+      "first_solved": "2026-10-19",
+      "id": 104,
+      "slug": "maximum-depth-of-binary-tree",
+      "title": "Maximum Depth of Binary Tree",
+      "topics": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Binary Tree"
       ]
     },
     "11": {
@@ -398,6 +425,19 @@
         "Matrix"
       ]
     },
+    "18": {
+      "description": "Given an array `nums` of `n` integers, return *an array of all the **unique** quadruplets* `[nums[a], nums[b], nums[c], nums[d]]` such that:\n\n- `0 <= a, b, c, d < n`\n- `a`, `b`, `c`, and `d` are **distinct**.\n- `nums[a] + nums[b] + nums[c] + nums[d] == target`\n\nYou may return the answer in **any order**.\n\n**Example 1:**\n\n```text\n\nInput: nums = [1,0,-1,0,-2,2], target = 0\nOutput: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [2,2,2,2,2], target = 8\nOutput: [[2,2,2,2]]\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 200`\n- `-10^9 <= nums[i] <= 10^9`\n- `-10^9 <= target <= 10^9`",
+      "difficulty": "Medium",
+      "first_solved": "2026-10-20",
+      "id": 18,
+      "slug": "4sum",
+      "title": "4Sum",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ]
+    },
     "189": {
       "description": "Given an integer array `nums`, rotate the array to the right by `k` steps, where `k` is non-negative.\n\n**Example 1:**\n\n```text\n\nInput: nums = [1,2,3,4,5,6,7], k = 3\nOutput: [5,6,7,1,2,3,4]\nExplanation:\nrotate 1 steps to the right: [7,1,2,3,4,5,6]\nrotate 2 steps to the right: [6,7,1,2,3,4,5]\nrotate 3 steps to the right: [5,6,7,1,2,3,4]\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [-1,-100,3,99], k = 2\nOutput: [3,99,-1,-100]\nExplanation:\nrotate 1 steps to the right: [99,-1,-100,3]\nrotate 2 steps to the right: [3,99,-1,-100]\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 10^5`\n- `-2^31 <= nums[i] <= 2^31 - 1`\n- `0 <= k <= 10^5`\n\n**Follow up:**\n\n- Try to come up with as many solutions as you can. There are at least **three** different ways to solve this problem.\n- Could you do it in-place with `O(1)` extra space?",
       "difficulty": "Medium",
@@ -471,6 +511,19 @@
       "topics": [
         "Linked List",
         "Recursion"
+      ]
+    },
+    "2089": {
+      "description": "You are given a **0-indexed** integer array `nums` and a target element `target`.\n\nA **target index** is an index `i` such that `nums[i] == target`.\n\nReturn *a list of the target indices of* `nums` after* sorting *`nums`* in **non-decreasing** order*. If there are no target indices, return *an **empty** list*. The returned list must be sorted in **increasing** order.\n\n**Example 1:**\n\n```text\n\nInput: nums = [1,2,5,2,3], target = 2\nOutput: [1,2]\nExplanation: After sorting, nums is [1,2,2,3,5].\nThe indices where nums[i] == 2 are 1 and 2.\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [1,2,5,2,3], target = 3\nOutput: [3]\nExplanation: After sorting, nums is [1,2,2,3,5].\nThe index where nums[i] == 3 is 3.\n\n```\n\n**Example 3:**\n\n```text\n\nInput: nums = [1,2,5,2,3], target = 5\nOutput: [4]\nExplanation: After sorting, nums is [1,2,2,3,5].\nThe index where nums[i] == 5 is 4.\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 100`\n- `1 <= nums[i], target <= 100`",
+      "difficulty": "Easy",
+      "first_solved": "2026-10-19",
+      "id": 2089,
+      "slug": "find-target-indices-after-sorting-array",
+      "title": "Find Target Indices After Sorting Array",
+      "topics": [
+        "Array",
+        "Binary Search",
+        "Sorting"
       ]
     },
     "21": {
@@ -676,6 +729,19 @@
         "Hash Table",
         "String",
         "Sliding Window"
+      ]
+    },
+    "303": {
+      "description": "Given an integer array `nums`, handle multiple queries of the following type:\n\n- Calculate the **sum** of the elements of `nums` between indices `left` and `right` **inclusive** where `left <= right`.\n\nImplement the `NumArray` class:\n\n- `NumArray(int[] nums)` Initializes the object with the integer array `nums`.\n- `int sumRange(int left, int right)` Returns the **sum** of the elements of `nums` between indices `left` and `right` **inclusive** (i.e. `nums[left] + nums[left + 1] + ... + nums[right]`).\n\n**Example 1:**\n\n```text\n\nInput\n[\"NumArray\", \"sumRange\", \"sumRange\", \"sumRange\"]\n[[[-2, 0, 3, -5, 2, -1]], [0, 2], [2, 5], [0, 5]]\nOutput\n[null, 1, -1, -3]\n\nExplanation\nNumArray numArray = new NumArray([-2, 0, 3, -5, 2, -1]);\nnumArray.sumRange(0, 2); // return (-2) + 0 + 3 = 1\nnumArray.sumRange(2, 5); // return 3 + (-5) + 2 + (-1) = -1\nnumArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 10^4`\n- `-10^5 <= nums[i] <= 10^5`\n- `0 <= left <= right < nums.length`\n- At most `10^4` calls will be made to `sumRange`.",
+      "difficulty": "Easy",
+      "first_solved": "2026-10-17",
+      "id": 303,
+      "slug": "range-sum-query-immutable",
+      "title": "Range Sum Query - Immutable",
+      "topics": [
+        "Array",
+        "Design",
+        "Prefix Sum"
       ]
     },
     "33": {
@@ -1161,6 +1227,18 @@
         "Bit Manipulation"
       ]
     },
+    "80": {
+      "description": "Given an integer array `nums` sorted in **non-decreasing order**, remove some duplicates **in-place** such that each unique element appears **at most twice**. The **relative order** of the elements should be kept the **same**.\n\nSince it is impossible to change the length of the array in some languages, you must instead have the result be placed in the **first part** of the array `nums`. More formally, if there are `k` elements after removing the duplicates, then the first `k` elements of `nums` should hold the final result. It does not matter what you leave beyond the first `k` elements.\n\nReturn `k`* after placing the final result in the first *`k`* slots of *`nums`.\n\nDo **not** allocate extra space for another array. You must do this by **modifying the input array in-place** with O(1) extra memory.\n\n**Custom Judge:**\n\nThe judge will test your solution with the following code:\n\n```text\n\nint[] nums = [...]; // Input array\nint[] expectedNums = [...]; // The expected answer with correct length\n\nint k = removeDuplicates(nums); // Calls your implementation\n\nassert k == expectedNums.length;\nfor (int i = 0; i < k; i++) {\n    assert nums[i] == expectedNums[i];\n}\n\n```\n\nIf all assertions pass, then your solution will be **accepted**.\n\n**Example 1:**\n\n```text\n\nInput: nums = [1,1,1,2,2,3]\nOutput: 5, nums = [1,1,2,2,3,_]\nExplanation: Your function should return k = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [0,0,1,1,1,1,2,3,3]\nOutput: 7, nums = [0,0,1,1,2,3,3,_,_]\nExplanation: Your function should return k = 7, with the first seven elements of nums being 0, 0, 1, 1, 2, 3 and 3 respectively.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 3 * 10^4`\n- `-10^4 <= nums[i] <= 10^4`\n- `nums` is sorted in **non-decreasing** order.",
+      "difficulty": "Medium",
+      "first_solved": "2026-10-17",
+      "id": 80,
+      "slug": "remove-duplicates-from-sorted-array-ii",
+      "title": "Remove Duplicates from Sorted Array II",
+      "topics": [
+        "Array",
+        "Two Pointers"
+      ]
+    },
     "81": {
       "description": "There is an integer array `nums` sorted in non-decreasing order (not necessarily with **distinct** values).\n\nBefore being passed to your function, `nums` is **rotated** at an unknown pivot index `k` (`0 <= k < nums.length`) such that the resulting array is `[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]` (**0-indexed**). For example, `[0,1,2,4,4,4,5,6,6,7]` might be rotated at pivot index `5` and become `[4,5,6,6,7,0,1,2,4,4]`.\n\nGiven the array `nums` **after** the rotation and an integer `target`, return `true`* if *`target`* is in *`nums`*, or *`false`* if it is not in *`nums`*.*\n\nYou must decrease the overall operation steps as much as possible.\n\n**Example 1:**\n\n```text\nInput: nums = [2,5,6,0,0,1,2], target = 0\nOutput: true\n\n```\n\n**Example 2:**\n\n```text\nInput: nums = [2,5,6,0,0,1,2], target = 3\nOutput: false\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 5000`\n- `-10^4 <= nums[i] <= 10^4`\n- `nums` is guaranteed to be rotated at some pivot.\n- `-10^4 <= target <= 10^4`\n\n**Follow up:** This problem is similar to Search in Rotated Sorted Array, but `nums` may contain **duplicates**. Would this affect the runtime complexity? How and why?",
       "difficulty": "Medium",
@@ -1280,12 +1358,14 @@
   "slugs": {
     "3sum": "15",
     "3sum-closest": "16",
+    "4sum": "18",
     "absolute-difference-between-maximum-and-minimum-k-elements": "3774",
     "add-two-numbers": "2",
     "best-time-to-buy-and-sell-stock": "121",
     "best-time-to-buy-and-sell-stock-ii": "122",
     "best-time-to-buy-and-sell-stock-iii": "123",
     "binary-tree-inorder-traversal": "94",
+    "binary-tree-level-order-traversal": "102",
     "concatenation-of-array": "1929",
     "container-with-most-water": "11",
     "contains-duplicate": "217",
@@ -1303,6 +1383,7 @@
     "find-minimum-in-rotated-sorted-array-ii": "154",
     "find-peak-element": "162",
     "find-pivot-index": "724",
+    "find-target-indices-after-sorting-array": "2089",
     "find-the-index-of-the-first-occurrence-in-a-string": "28",
     "first-missing-positive": "41",
     "first-unique-character-in-a-string": "387",
@@ -1318,6 +1399,7 @@
     "longest-substring-without-repeating-characters": "3",
     "majority-element": "169",
     "max-dot-product-of-two-subsequences": "1458",
+    "maximum-depth-of-binary-tree": "104",
     "median-of-two-sorted-arrays": "4",
     "merge-k-sorted-lists": "23",
     "merge-sorted-array": "88",
@@ -1334,7 +1416,9 @@
     "pascals-triangle-ii": "119",
     "plus-one": "66",
     "prime-subset-selection-i": "4079",
+    "range-sum-query-immutable": "303",
     "remove-duplicates-from-sorted-array": "26",
+    "remove-duplicates-from-sorted-array-ii": "80",
     "remove-duplicates-from-sorted-list": "83",
     "remove-duplicates-from-sorted-list-ii": "82",
     "remove-element": "27",
