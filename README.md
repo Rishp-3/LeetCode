@@ -3,6 +3,7 @@
 My accepted LeetCode solutions in Java.
 
 <!-- LEETCODE-SYNC:START -->
+
 ## Progress
 
 | Easy | Medium | Hard | Total |
