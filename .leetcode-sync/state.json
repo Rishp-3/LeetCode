@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2178216081,
+  "last_submission_id": 2185620841,
   "problems": {
     "1": {
       "description": "You are given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.\n\nYou may assume that each input would have ***exactly* one solution**, and you may not use the *same* element twice.\n\nYou can return the answer in any order.\n\n**Example 1:**\n\n```text\n\nInput: nums = [2,7,11,15], target = 9\nOutput: [0,1]\nExplanation: Because nums[0] + nums[1] == 9, we return [0, 1].\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [3,2,4], target = 6\nOutput: [1,2]\n\n```\n\n**Example 3:**\n\n```text\n\nInput: nums = [3,3], target = 6\nOutput: [0,1]\n\n```\n\n**Constraints:**\n\n- `2 <= nums.length <= 10^4`\n- `-10^9 <= nums[i] <= 10^9`\n- `-10^9 <= target <= 10^9`\n- **Only one valid answer exists.**\n\n **Follow-up: **Can you come up with an algorithm that is less than `O(n^2)` time complexity?",
@@ -260,6 +260,17 @@
         "Recursion"
       ]
     },
+    "1431": {
+      "description": "There are `n` kids with candies. You are given an integer array `candies`, where each `candies[i]` represents the number of candies the `i^th` kid has, and an integer `extraCandies`, denoting the number of extra candies that you have.\n\nReturn *a boolean array *`result`* of length *`n`*, where *`result[i]`* is *`true`* if, after giving the *`i^th`* kid all the *`extraCandies`*, they will have the **greatest** number of candies among all the kids**, or *`false`* otherwise*.\n\nNote that **multiple** kids can have the **greatest** number of candies.\n\n**Example 1:**\n\n```text\n\nInput: candies = [2,3,5,1,3], extraCandies = 3\nOutput: [true,true,true,false,true]\nExplanation: If you give all extraCandies to:\n- Kid 1, they will have 2 + 3 = 5 candies, which is the greatest among the kids.\n- Kid 2, they will have 3 + 3 = 6 candies, which is the greatest among the kids.\n- Kid 3, they will have 5 + 3 = 8 candies, which is the greatest among the kids.\n- Kid 4, they will have 1 + 3 = 4 candies, which is not the greatest among the kids.\n- Kid 5, they will have 3 + 3 = 6 candies, which is the greatest among the kids.\n\n```\n\n**Example 2:**\n\n```text\n\nInput: candies = [4,2,1,1,2], extraCandies = 1\nOutput: [true,false,false,false,false]\nExplanation: There is only 1 extra candy.\nKid 1 will always have the greatest number of candies, even if a different kid is given the extra candy.\n\n```\n\n**Example 3:**\n\n```text\n\nInput: candies = [12,1,12], extraCandies = 10\nOutput: [true,false,true]\n\n```\n\n**Constraints:**\n\n- `n == candies.length`\n- `2 <= n <= 100`\n- `1 <= candies[i] <= 100`\n- `1 <= extraCandies <= 50`",
+      "difficulty": "Easy",
+      "first_solved": "2026-10-30",
+      "id": 1431,
+      "slug": "kids-with-the-greatest-number-of-candies",
+      "title": "Kids With the Greatest Number of Candies",
+      "topics": [
+        "Array"
+      ]
+    },
     "1458": {
       "description": "Given two arrays `nums1` and `nums2`.\n\nReturn the maximum dot product between **non-empty** subsequences of nums1 and nums2 with the same length.\n\nA subsequence of an array is a new array which is formed from the original array by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, `[2,3,5]` is a subsequence of `[1,2,3,4,5]` while `[1,5,3]` is not).\n\n**Example 1:**\n\n```text\n\nInput: nums1 = [2,1,-2,5], nums2 = [3,0,-6]\nOutput: 18\nExplanation: Take subsequence [2,-2] from nums1 and subsequence [3,-6] from nums2.\nTheir dot product is (2*3 + (-2)*(-6)) = 18.\n```\n\n**Example 2:**\n\n```text\n\nInput: nums1 = [3,-2], nums2 = [2,-6,7]\nOutput: 21\nExplanation: Take subsequence [3] from nums1 and subsequence [7] from nums2.\nTheir dot product is (3*7) = 21.\n```\n\n**Example 3:**\n\n```text\n\nInput: nums1 = [-1,-1], nums2 = [1,1]\nOutput: -1\nExplanation: Take subsequence [-1] from nums1 and subsequence [1] from nums2.\nTheir dot product is -1.\n```\n\n**Constraints:**\n\n- `1 <= nums1.length, nums2.length <= 500`\n- `-1000 <= nums1[i], nums2[i] <= 1000`",
       "difficulty": "Hard",
@@ -423,6 +434,18 @@
         "Array",
         "Dynamic Programming",
         "Matrix"
+      ]
+    },
+    "1768": {
+      "description": "You are given two strings `word1` and `word2`. Merge the strings by adding letters in alternating order, starting with `word1`. If a string is longer than the other, append the additional letters onto the end of the merged string.\n\nReturn *the merged string.*\n\n**Example 1:**\n\n```text\n\r\nInput: word1 = \"abc\", word2 = \"pqr\"\r\nOutput: \"apbqcr\"\r\nExplanation: The merged string will be merged as so:\r\nword1:  a   b   c\r\nword2:    p   q   r\r\nmerged: a p b q c r\r\n\n```\n\n**Example 2:**\n\n```text\n\r\nInput: word1 = \"ab\", word2 = \"pqrs\"\r\nOutput: \"apbqrs\"\r\nExplanation: Notice that as word2 is longer, \"rs\" is appended to the end.\r\nword1:  a   b \r\nword2:    p   q   r   s\r\nmerged: a p b q   r   s\r\n\n```\n\n**Example 3:**\n\n```text\n\r\nInput: word1 = \"abcd\", word2 = \"pq\"\r\nOutput: \"apbqcd\"\r\nExplanation: Notice that as word1 is longer, \"cd\" is appended to the end.\r\nword1:  a   b   c   d\r\nword2:    p   q \r\nmerged: a p b q c   d\r\n\n```\n\n**Constraints:**\n\n- `1 <= word1.length, word2.length <= 100`\n- `word1` and `word2` consist of lowercase English letters.",
+      "difficulty": "Easy",
+      "first_solved": "2026-10-30",
+      "id": 1768,
+      "slug": "merge-strings-alternately",
+      "title": "Merge Strings Alternately",
+      "topics": [
+        "Two Pointers",
+        "String"
       ]
     },
     "18": {
@@ -1098,6 +1121,18 @@
         "String"
       ]
     },
+    "605": {
+      "description": "You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in **adjacent** plots.\n\nGiven an integer array `flowerbed` containing `0`'s and `1`'s, where `0` means empty and `1` means not empty, and an integer `n`, return `true` *if* `n` *new flowers can be planted in the* `flowerbed` *without violating the no-adjacent-flowers rule and* `false` *otherwise*.\n\n**Example 1:**\n\n```text\nInput: flowerbed = [1,0,0,0,1], n = 1\nOutput: true\n\n```\n\n**Example 2:**\n\n```text\nInput: flowerbed = [1,0,0,0,1], n = 2\nOutput: false\n\n```\n\n**Constraints:**\n\n- `1 <= flowerbed.length <= 2 * 10^4`\n- `flowerbed[i]` is `0` or `1`.\n- There are no two adjacent flowers in `flowerbed`.\n- `0 <= n <= flowerbed.length`",
+      "difficulty": "Easy",
+      "first_solved": "2026-10-30",
+      "id": 605,
+      "slug": "can-place-flowers",
+      "title": "Can Place Flowers",
+      "topics": [
+        "Array",
+        "Greedy"
+      ]
+    },
     "61": {
       "description": "Given the `head` of a linked list, rotate the list to the right by `k` places.\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2020/11/13/rotate1.jpg)\n\n```text\n\nInput: head = [1,2,3,4,5], k = 2\nOutput: [4,5,1,2,3]\n\n```\n\n**Example 2:**\n\n![](https://assets.leetcode.com/uploads/2020/11/13/roate2.jpg)\n\n```text\n\nInput: head = [0,1,2], k = 4\nOutput: [2,0,1]\n\n```\n\n**Constraints:**\n\n- The number of nodes in the list is in the range `[0, 500]`.\n- `-100 <= Node.val <= 100`\n- `0 <= k <= 2 * 10^9`",
       "difficulty": "Medium",
@@ -1366,6 +1401,7 @@
     "best-time-to-buy-and-sell-stock-iii": "123",
     "binary-tree-inorder-traversal": "94",
     "binary-tree-level-order-traversal": "102",
+    "can-place-flowers": "605",
     "concatenation-of-array": "1929",
     "container-with-most-water": "11",
     "contains-duplicate": "217",
@@ -1391,6 +1427,7 @@
     "integer-to-roman": "12",
     "intersection-of-two-arrays": "349",
     "jump-game-ii": "45",
+    "kids-with-the-greatest-number-of-candies": "1431",
     "kth-missing-positive-number": "1539",
     "length-of-last-word": "58",
     "linked-list-cycle": "141",
@@ -1403,6 +1440,7 @@
     "median-of-two-sorted-arrays": "4",
     "merge-k-sorted-lists": "23",
     "merge-sorted-array": "88",
+    "merge-strings-alternately": "1768",
     "merge-two-sorted-lists": "21",
     "minimum-deletions-to-make-alternating-substring": "3777",
     "minimum-moves-to-balance-circular-array": "3776",
