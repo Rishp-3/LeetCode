@@ -228,7 +228,9 @@ def html_to_md(html_text):
 # ------------------------------------------------------------------------- helpers
 def load_state():
     if STATE_PATH.exists():
-        return json.loads(STATE_PATH.read_text(encoding="utf-8"))
+        raw = STATE_PATH.read_text(encoding="utf-8").strip()
+        if raw:
+            return json.loads(raw)
     return {"last_submission_id": 0, "slugs": {}, "problems": {}}
 
 
