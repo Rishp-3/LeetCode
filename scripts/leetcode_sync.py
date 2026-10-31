@@ -10,6 +10,7 @@ What it does
   * Creates Main.java ONLY if it does not exist (exclusive-create). An existing
     Main.java is never opened for writing.
   * Regenerates the stats/tables block of the root README.md between markers.
+  * Regenerates the animated SVGs in assets/ (header, progress card, divider).
 
 Environment
   LEETCODE_SESSION, LEETCODE_CSRF_TOKEN   required (browser cookies)
@@ -400,6 +401,19 @@ def update_root_readme(state):
     return False
 
 
+def update_assets(state):
+    """Regenerate the animated README SVGs. Never lets a cosmetic failure break the sync."""
+    try:
+        from leetcode_assets import write_all
+        entries = collect_entries(state)
+        counts = {d: sum(1 for e in entries if e["difficulty"] == d) for d in DIFFICULTIES}
+        write_all(counts["Easy"], counts["Medium"], counts["Hard"], str(ROOT / "assets"))
+        return True
+    except Exception as e:  # noqa: BLE001
+        print(f"  warning: could not update assets ({e})", file=sys.stderr)
+        return False
+
+
 # -------------------------------------------------------------------------- main
 def main():
     if not SESSION or not CSRF:
@@ -462,8 +476,9 @@ def main():
         state["last_submission_id"] = max(int(state.get("last_submission_id", 0)), newest_id)
     save_state(state)
     readme_changed = update_root_readme(state)
+    assets_ok = update_assets(state)
 
-    print(f"Done: {changed}, root README updated: {readme_changed}")
+    print(f"Done: {changed}, root README updated: {readme_changed}, assets updated: {assets_ok}")
 
 
 if __name__ == "__main__":
