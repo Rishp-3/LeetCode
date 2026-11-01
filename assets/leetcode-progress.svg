@@ -1,9 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="780" height="250" viewBox="0 0 780 250" role="img"
-     aria-label="LeetCode progress: 6 solved">
+     aria-label="LeetCode progress: 3 solved. Easy 100%, Medium 0%, Hard 0%">
   <defs>
-    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#00b8a3"/><stop offset="0.5" stop-color="#ffc01e"/><stop offset="1" stop-color="#ff375f"/>
-    </linearGradient>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#161b22"/>
     </linearGradient>
@@ -14,8 +11,10 @@
     <style>
       text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
       .title { font-size: 18px; font-weight: 700; fill: #e6edf3; }
+      .cap   { font-size: 11px; fill: #8b949e; letter-spacing: 1.6px; }
       .lbl   { font-size: 14px; font-weight: 600; fill: #c9d1d9; }
-      .cnt   { font-size: 13px; fill: #8b949e; }
+      .pct   { font-size: 15px; font-weight: 800; }
+      .cnt   { font-size: 12px; fill: #8b949e; }
       .big   { font-size: 34px; font-weight: 800; fill: #e6edf3; }
       .sub   { font-size: 12px; fill: #8b949e; letter-spacing: 1.5px; }
     </style>
@@ -24,27 +23,18 @@
   <rect x="1" y="1" width="778" height="248" rx="16" fill="url(#bg)" stroke="#30363d"/>
 
   <!-- floating background dots -->
-  <circle cx="700" cy="40" r="2" fill="#00b8a3" opacity="0.5">
-    <animate attributeName="cy" values="40;28;40" dur="5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="740" cy="210" r="2.5" fill="#ffc01e" opacity="0.4">
-    <animate attributeName="cy" values="210;198;210" dur="6s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="30" cy="30" r="2" fill="#ff375f" opacity="0.4">
-    <animate attributeName="cy" values="30;42;30" dur="4.5s" repeatCount="indefinite"/>
-  </circle>
+  <circle cx="700" cy="215" r="2" fill="#00b8a3" opacity="0.5"><animate attributeName="cy" values="215;203;215" dur="5s" repeatCount="indefinite"/></circle>
+  <circle cx="740" cy="190" r="2.5" fill="#ffc01e" opacity="0.4"><animate attributeName="cy" values="190;178;190" dur="6s" repeatCount="indefinite"/></circle>
+  <circle cx="30" cy="228" r="2" fill="#ff375f" opacity="0.4"><animate attributeName="cy" values="228;216;228" dur="4.5s" repeatCount="indefinite"/></circle>
 
   <text x="28" y="40" class="title">LeetCode Progress</text>
+  <text x="752" y="38" class="cap" text-anchor="end">SOLVED BY DIFFICULTY (%)</text>
 
-  <!-- total ring -->
+  <!-- donut: share of solved problems -->
   <g transform="translate(115 142)">
     <circle r="52" fill="none" stroke="#21262d" stroke-width="12"/>
-    <circle r="52" fill="none" stroke="url(#ring)" stroke-width="12" stroke-linecap="round"
-            stroke-dasharray="326.73" stroke-dashoffset="326.73" transform="rotate(-90)" filter="url(#glow)">
-      <animate attributeName="stroke-dashoffset" from="326.73" to="315.83" dur="1.6s" fill="freeze"
-               calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
-    </circle>
-    <text class="big" text-anchor="middle" y="8" opacity="0">6
+    <circle r="52" fill="none" stroke="#00b8a3" stroke-width="12" stroke-dasharray="0 326.73" stroke-dashoffset="-0.00" transform="rotate(-90)" filter="url(#glow)"><animate attributeName="stroke-dasharray" from="0 326.73" to="326.73 326.73" dur="0.9s" begin="0.30s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/></circle>
+    <text class="big" text-anchor="middle" y="8" opacity="0">3
       <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.6s" fill="freeze"/>
     </text>
     <text class="sub" text-anchor="middle" y="30">SOLVED</text>
@@ -52,41 +42,35 @@
 
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.3s" fill="freeze"/>
-    <circle cx="236" cy="73" r="4" fill="#00b8a3">
-      <animate attributeName="r" values="3;5.5;3" dur="2s" repeatCount="indefinite"/>
-    </circle>
+    <circle cx="236" cy="73" r="4" fill="#00b8a3"><animate attributeName="r" values="3;5.5;3" dur="2s" repeatCount="indefinite"/></circle>
     <text x="250" y="64" class="lbl">Easy</text>
-    <text x="720" y="64" class="cnt" text-anchor="end">5 / 50</text>
+    <text x="642" y="64" text-anchor="end" class="pct" fill="#00b8a3">100%</text>
+    <text x="720" y="64" text-anchor="end" class="cnt">3 solved</text>
     <rect x="250" y="72" width="470" height="14" rx="7" fill="#21262d"/>
     <rect x="250" y="72" width="0" height="14" rx="7" fill="#00b8a3" filter="url(#glow)">
-      <animate attributeName="width" from="0" to="47.0" dur="1.4s" begin="0.3s" fill="freeze"
-               calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+      <animate attributeName="width" from="0" to="470.0" dur="1.4s" begin="0.3s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/>
     </rect>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.55s" fill="freeze"/>
-    <circle cx="236" cy="125" r="4" fill="#ffc01e">
-      <animate attributeName="r" values="3;5.5;3" dur="2s" repeatCount="indefinite"/>
-    </circle>
+    <circle cx="236" cy="125" r="4" fill="#ffc01e"><animate attributeName="r" values="3;5.5;3" dur="2s" repeatCount="indefinite"/></circle>
     <text x="250" y="116" class="lbl">Medium</text>
-    <text x="720" y="116" class="cnt" text-anchor="end">1 / 100</text>
+    <text x="642" y="116" text-anchor="end" class="pct" fill="#ffc01e">0%</text>
+    <text x="720" y="116" text-anchor="end" class="cnt">0 solved</text>
     <rect x="250" y="124" width="470" height="14" rx="7" fill="#21262d"/>
     <rect x="250" y="124" width="0" height="14" rx="7" fill="#ffc01e" filter="url(#glow)">
-      <animate attributeName="width" from="0" to="4.7" dur="1.4s" begin="0.55s" fill="freeze"
-               calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+      <animate attributeName="width" from="0" to="0.0" dur="1.4s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/>
     </rect>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.8s" fill="freeze"/>
-    <circle cx="236" cy="177" r="4" fill="#ff375f">
-      <animate attributeName="r" values="3;5.5;3" dur="2s" repeatCount="indefinite"/>
-    </circle>
+    <circle cx="236" cy="177" r="4" fill="#ff375f"><animate attributeName="r" values="3;5.5;3" dur="2s" repeatCount="indefinite"/></circle>
     <text x="250" y="168" class="lbl">Hard</text>
-    <text x="720" y="168" class="cnt" text-anchor="end">0 / 30</text>
+    <text x="642" y="168" text-anchor="end" class="pct" fill="#ff375f">0%</text>
+    <text x="720" y="168" text-anchor="end" class="cnt">0 solved</text>
     <rect x="250" y="176" width="470" height="14" rx="7" fill="#21262d"/>
     <rect x="250" y="176" width="0" height="14" rx="7" fill="#ff375f" filter="url(#glow)">
-      <animate attributeName="width" from="0" to="0.0" dur="1.4s" begin="0.8s" fill="freeze"
-               calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+      <animate attributeName="width" from="0" to="0.0" dur="1.4s" begin="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/>
     </rect>
   </g>
 </svg>

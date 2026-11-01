@@ -407,7 +407,12 @@ def update_assets(state):
         from leetcode_assets import write_all
         entries = collect_entries(state)
         counts = {d: sum(1 for e in entries if e["difficulty"] == d) for d in DIFFICULTIES}
-        write_all(counts["Easy"], counts["Medium"], counts["Hard"], str(ROOT / "assets"))
+        freq = {}
+        for e in entries:
+            for tp in e["topics"]:
+                freq[tp] = freq.get(tp, 0) + 1
+        topics = [name for name, _ in sorted(freq.items(), key=lambda kv: (-kv[1], kv[0]))]
+        write_all(counts["Easy"], counts["Medium"], counts["Hard"], str(ROOT / "assets"), topics)
         return True
     except Exception as e:  # noqa: BLE001
         print(f"  warning: could not update assets ({e})", file=sys.stderr)
