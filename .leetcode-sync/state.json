@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2186506276,
+  "last_submission_id": 2187132120,
   "problems": {
     "1071": {
       "description": "For two strings `s` and `t`, we say \"`t` divides `s`\" if and only if `s = t + t + t + ... + t + t` (i.e., `t` is concatenated with itself one or more times).\n\nGiven two strings `str1` and `str2`, return *the largest string *`x`* such that *`x`* divides both *`str1`* and *`str2`.\n\n**Example 1:**\n\n**Input:** str1 = \"ABCABC\", str2 = \"ABC\"\n\n**Output:** \"ABC\"\n\n**Example 2:**\n\n**Input:** str1 = \"ABABAB\", str2 = \"ABAB\"\n\n**Output:** \"AB\"\n\n**Example 3:**\n\n**Input:** str1 = \"LEET\", str2 = \"CODE\"\n\n**Output:** \"\"\n\n**Example 4:**\n\n**Input:** str1 = \"AAAAAB\", str2 = \"AAA\"\n\n**Output:** \"\"\u200b\u200b\u200b\u200b\u200b\u200b\u200b\n\n**Constraints:**\n\n- `1 <= str1.length, str2.length <= 1000`\n- `str1` and `str2` consist of English uppercase letters.",
@@ -24,6 +24,18 @@
       "title": "Kids With the Greatest Number of Candies",
       "topics": [
         "Array"
+      ]
+    },
+    "151": {
+      "description": "Given an input string `s`, reverse the order of the **words**.\n\nA **word** is defined as a sequence of non-space characters. The **words** in `s` will be separated by at least one space.\n\nReturn *a string of the words in reverse order concatenated by a single space.*\n\n**Note** that `s` may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.\n\n**Example 1:**\n\n```text\n\nInput: s = \"the sky is blue\"\nOutput: \"blue is sky the\"\n\n```\n\n**Example 2:**\n\n```text\n\nInput: s = \"  hello world  \"\nOutput: \"world hello\"\nExplanation: Your reversed string should not contain leading or trailing spaces.\n\n```\n\n**Example 3:**\n\n```text\n\nInput: s = \"a good   example\"\nOutput: \"example good a\"\nExplanation: You need to reduce multiple spaces between two words to a single space in the reversed string.\n\n```\n\n**Constraints:**\n\n- `1 <= s.length <= 10^4`\n- `s` contains English letters (upper-case and lower-case), digits, and spaces `' '`.\n- There is **at least one** word in `s`.\n\n**Follow-up: **If the string data type is mutable in your language, can you solve it **in-place** with `O(1)` extra space?",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-01",
+      "id": 151,
+      "slug": "reverse-words-in-a-string",
+      "title": "Reverse Words in a String",
+      "topics": [
+        "Two Pointers",
+        "String"
       ]
     },
     "1768": {
@@ -63,6 +75,30 @@
         "Two Pointers"
       ]
     },
+    "345": {
+      "description": "Given a string `s`, reverse only all the vowels in the string and return it.\n\nThe vowels are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`, and they can appear in both lower and upper cases, more than once.\n\n**Example 1:**\n\n**Input:** s = \"IceCreAm\"\n\n**Output:** \"AceCreIm\"\n\n**Explanation:**\n\nThe vowels in `s` are `['I', 'e', 'e', 'A']`. On reversing the vowels, s becomes `\"AceCreIm\"`.\n\n**Example 2:**\n\n**Input:** s = \"leetcode\"\n\n**Output:** \"leotcede\"\n\n**Constraints:**\n\n- `1 <= s.length <= 3 * 10^5`\n- `s` consist of **printable ASCII** characters.",
+      "difficulty": "Easy",
+      "first_solved": "2026-11-01",
+      "id": 345,
+      "slug": "reverse-vowels-of-a-string",
+      "title": "Reverse Vowels of a String",
+      "topics": [
+        "Two Pointers",
+        "String"
+      ]
+    },
+    "41": {
+      "description": "Given an unsorted integer array `nums`. Return the *smallest positive integer* that is *not present* in `nums`.\n\nYou must implement an algorithm that runs in `O(n)` time and uses `O(1)` auxiliary space.\n\n**Example 1:**\n\n```text\n\nInput: nums = [1,2,0]\nOutput: 3\nExplanation: The numbers in the range [1,2] are all in the array.\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [3,4,-1,1]\nOutput: 2\nExplanation: 1 is in the array but 2 is missing.\n\n```\n\n**Example 3:**\n\n```text\n\nInput: nums = [7,8,9,11,12]\nOutput: 1\nExplanation: The smallest positive integer 1 is missing.\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 10^5`\n- `-2^31 <= nums[i] <= 2^31 - 1`",
+      "difficulty": "Hard",
+      "first_solved": "2026-11-01",
+      "id": 41,
+      "slug": "first-missing-positive",
+      "title": "First Missing Positive",
+      "topics": [
+        "Array",
+        "Hash Table"
+      ]
+    },
     "605": {
       "description": "You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in **adjacent** plots.\n\nGiven an integer array `flowerbed` containing `0`'s and `1`'s, where `0` means empty and `1` means not empty, and an integer `n`, return `true` *if* `n` *new flowers can be planted in the* `flowerbed` *without violating the no-adjacent-flowers rule and* `false` *otherwise*.\n\n**Example 1:**\n\n```text\nInput: flowerbed = [1,0,0,0,1], n = 1\nOutput: true\n\n```\n\n**Example 2:**\n\n```text\nInput: flowerbed = [1,0,0,0,1], n = 2\nOutput: false\n\n```\n\n**Constraints:**\n\n- `1 <= flowerbed.length <= 2 * 10^4`\n- `flowerbed[i]` is `0` or `1`.\n- There are no two adjacent flowers in `flowerbed`.\n- `0 <= n <= flowerbed.length`",
       "difficulty": "Easy",
@@ -79,9 +115,12 @@
   "slugs": {
     "add-two-numbers": "2",
     "can-place-flowers": "605",
+    "first-missing-positive": "41",
     "greatest-common-divisor-of-strings": "1071",
     "kids-with-the-greatest-number-of-candies": "1431",
     "merge-strings-alternately": "1768",
-    "move-zeroes": "283"
+    "move-zeroes": "283",
+    "reverse-vowels-of-a-string": "345",
+    "reverse-words-in-a-string": "151"
   }
 }
