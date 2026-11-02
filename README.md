@@ -29,10 +29,10 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 7 | 4 | 1 | 12 |
+| 8 | 6 | 1 | 15 |
 
 
-## Easy (7)
+## Easy (8)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
@@ -40,11 +40,12 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 345 | [Reverse Vowels of a String](Easy/345.ReverseVowelsOfAString) | Two Pointers, String | [Java](Easy/345.ReverseVowelsOfAString/Solution.java) | 2026-11-01 |
 | 392 | [Is Subsequence](Easy/392.IsSubsequence) | Two Pointers, String, Dynamic Programming | [Java](Easy/392.IsSubsequence/Solution.java) | 2026-11-02 |
 | 605 | [Can Place Flowers](Easy/605.CanPlaceFlowers) | Array, Greedy | [Java](Easy/605.CanPlaceFlowers/Solution.java) | 2026-10-30 |
+| 643 | [Maximum Average Subarray I](Easy/643.MaximumAverageSubarrayI) | Array, Sliding Window | [Java](Easy/643.MaximumAverageSubarrayI/Solution.java) | 2026-11-02 |
 | 1071 | [Greatest Common Divisor of Strings](Easy/1071.GreatestCommonDivisorOfStrings) | Math, String, Euclidean Algorithm, Greatest Common Divisor | [Java](Easy/1071.GreatestCommonDivisorOfStrings/Solution.java) | 2026-10-31 |
 | 1431 | [Kids With the Greatest Number of Candies](Easy/1431.KidsWithTheGreatestNumberOfCandies) | Array | [Java](Easy/1431.KidsWithTheGreatestNumberOfCandies/Solution.java) | 2026-10-30 |
 | 1768 | [Merge Strings Alternately](Easy/1768.MergeStringsAlternately) | Two Pointers, String | [Java](Easy/1768.MergeStringsAlternately/Solution.java) | 2026-10-30 |
 
-## Medium (4)
+## Medium (6)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
@@ -52,6 +53,8 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 11 | [Container With Most Water](Medium/11.ContainerWithMostWater) | Array, Two Pointers, Greedy | [Java](Medium/11.ContainerWithMostWater/Solution.java) | 2026-11-02 |
 | 151 | [Reverse Words in a String](Medium/151.ReverseWordsInAString) | Two Pointers, String | [Java](Medium/151.ReverseWordsInAString/Solution.java) | 2026-11-01 |
 | 334 | [Increasing Triplet Subsequence](Medium/334.IncreasingTripletSubsequence) | Array, Greedy, Longest Increasing Subsequence | [Java](Medium/334.IncreasingTripletSubsequence/Solution.java) | 2026-11-02 |
+| 443 | [String Compression](Medium/443.StringCompression) | Two Pointers, String | [Java](Medium/443.StringCompression/Solution.java) | 2026-11-02 |
+| 1679 | [Max Number of K-Sum Pairs](Medium/1679.MaxNumberOfKSumPairs) | Array, Hash Table, Two Pointers, Sorting | [Java](Medium/1679.MaxNumberOfKSumPairs/Solution.java) | 2026-11-02 |
 
 ## Hard (1)
 
