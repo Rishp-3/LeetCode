@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2187132120,
+  "last_submission_id": 2187400529,
   "problems": {
     "1071": {
       "description": "For two strings `s` and `t`, we say \"`t` divides `s`\" if and only if `s = t + t + t + ... + t + t` (i.e., `t` is concatenated with itself one or more times).\n\nGiven two strings `str1` and `str2`, return *the largest string *`x`* such that *`x`* divides both *`str1`* and *`str2`.\n\n**Example 1:**\n\n**Input:** str1 = \"ABCABC\", str2 = \"ABC\"\n\n**Output:** \"ABC\"\n\n**Example 2:**\n\n**Input:** str1 = \"ABABAB\", str2 = \"ABAB\"\n\n**Output:** \"AB\"\n\n**Example 3:**\n\n**Input:** str1 = \"LEET\", str2 = \"CODE\"\n\n**Output:** \"\"\n\n**Example 4:**\n\n**Input:** str1 = \"AAAAAB\", str2 = \"AAA\"\n\n**Output:** \"\"\u200b\u200b\u200b\u200b\u200b\u200b\u200b\n\n**Constraints:**\n\n- `1 <= str1.length, str2.length <= 1000`\n- `str1` and `str2` consist of English uppercase letters.",
@@ -13,6 +13,19 @@
         "String",
         "Euclidean Algorithm",
         "Greatest Common Divisor"
+      ]
+    },
+    "11": {
+      "description": "You are given an integer array `height` of length `n`. There are `n` vertical lines drawn such that the two endpoints of the `i^th` line are `(i, 0)` and `(i, height[i])`.\n\nFind two lines that together with the x-axis form a container, such that the container contains the most water.\n\nReturn *the maximum amount of water a container can store*.\n\n**Notice** that you may not slant the container.\n\n**Example 1:**\n\n![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg)\n\n```text\n\nInput: height = [1,8,6,2,5,4,8,3,7]\nOutput: 49\nExplanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.\n\n```\n\n**Example 2:**\n\n```text\n\nInput: height = [1,1]\nOutput: 1\n\n```\n\n**Constraints:**\n\n- `n == height.length`\n- `2 <= n <= 10^5`\n- `0 <= height[i] <= 10^4`",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-02",
+      "id": 11,
+      "slug": "container-with-most-water",
+      "title": "Container With Most Water",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Greedy"
       ]
     },
     "1431": {
@@ -75,6 +88,19 @@
         "Two Pointers"
       ]
     },
+    "334": {
+      "description": "You are given an integer array `nums`.\n\nReturn `true`* if there exists a triple of indices *`(i, j, k)`* such that *`i < j < k`* and *`nums[i] < nums[j] < nums[k]`. If no such indices exists, return `false`.\n\n**Example 1:**\n\n```text\n\nInput: nums = [1,2,3,4,5]\nOutput: true\nExplanation: Any triplet where i < j < k is valid.\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [5,4,3,2,1]\nOutput: false\nExplanation: No triplet exists.\n\n```\n\n**Example 3:**\n\n```text\n\nInput: nums = [2,1,5,0,4,6]\nOutput: true\nExplanation: One of the valid triplet is (1, 4, 5), because nums[1] == 1 < nums[4] == 4 < nums[5] == 6.\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 5 * 10^5`\n- `-2^31 <= nums[i] <= 2^31 - 1`\n\n **Follow up:** Could you implement a solution that runs in `O(n)` time complexity and `O(1)` space complexity?",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-02",
+      "id": 334,
+      "slug": "increasing-triplet-subsequence",
+      "title": "Increasing Triplet Subsequence",
+      "topics": [
+        "Array",
+        "Greedy",
+        "Longest Increasing Subsequence"
+      ]
+    },
     "345": {
       "description": "Given a string `s`, reverse only all the vowels in the string and return it.\n\nThe vowels are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`, and they can appear in both lower and upper cases, more than once.\n\n**Example 1:**\n\n**Input:** s = \"IceCreAm\"\n\n**Output:** \"AceCreIm\"\n\n**Explanation:**\n\nThe vowels in `s` are `['I', 'e', 'e', 'A']`. On reversing the vowels, s becomes `\"AceCreIm\"`.\n\n**Example 2:**\n\n**Input:** s = \"leetcode\"\n\n**Output:** \"leotcede\"\n\n**Constraints:**\n\n- `1 <= s.length <= 3 * 10^5`\n- `s` consist of **printable ASCII** characters.",
       "difficulty": "Easy",
@@ -85,6 +111,19 @@
       "topics": [
         "Two Pointers",
         "String"
+      ]
+    },
+    "392": {
+      "description": "Given two strings `s` and `t`, return `true`* if *`s`* is a **subsequence** of *`t`*, or *`false`* otherwise*.\n\nA **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not).\n\n**Example 1:**\n\n```text\nInput: s = \"abc\", t = \"ahbgdc\"\nOutput: true\n\n```\n\n**Example 2:**\n\n```text\nInput: s = \"axc\", t = \"ahbgdc\"\nOutput: false\n\n```\n\n**Constraints:**\n\n- `0 <= s.length <= 100`\n- `0 <= t.length <= 10^4`\n- `s` and `t` consist only of lowercase English letters.\n\n **Follow up:** Suppose there are lots of incoming `s`, say `s1, s2, ..., sk` where `k >= 10^9`, and you want to check one by one to see if `t` has its subsequence. In this scenario, how would you change your code?",
+      "difficulty": "Easy",
+      "first_solved": "2026-11-02",
+      "id": 392,
+      "slug": "is-subsequence",
+      "title": "Is Subsequence",
+      "topics": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming"
       ]
     },
     "41": {
@@ -115,8 +154,11 @@
   "slugs": {
     "add-two-numbers": "2",
     "can-place-flowers": "605",
+    "container-with-most-water": "11",
     "first-missing-positive": "41",
     "greatest-common-divisor-of-strings": "1071",
+    "increasing-triplet-subsequence": "334",
+    "is-subsequence": "392",
     "kids-with-the-greatest-number-of-candies": "1431",
     "merge-strings-alternately": "1768",
     "move-zeroes": "283",
