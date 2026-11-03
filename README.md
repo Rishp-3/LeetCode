@@ -29,7 +29,7 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 8 | 6 | 1 | 15 |
+| 8 | 8 | 1 | 17 |
 
 
 ## Easy (8)
@@ -45,7 +45,7 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 1431 | [Kids With the Greatest Number of Candies](Easy/1431.KidsWithTheGreatestNumberOfCandies) | Array | [Java](Easy/1431.KidsWithTheGreatestNumberOfCandies/Solution.java) | 2026-10-30 |
 | 1768 | [Merge Strings Alternately](Easy/1768.MergeStringsAlternately) | Two Pointers, String | [Java](Easy/1768.MergeStringsAlternately/Solution.java) | 2026-10-30 |
 
-## Medium (6)
+## Medium (8)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
@@ -55,6 +55,8 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 334 | [Increasing Triplet Subsequence](Medium/334.IncreasingTripletSubsequence) | Array, Greedy, Longest Increasing Subsequence | [Java](Medium/334.IncreasingTripletSubsequence/Solution.java) | 2026-11-02 |
 | 443 | [String Compression](Medium/443.StringCompression) | Two Pointers, String | [Java](Medium/443.StringCompression/Solution.java) | 2026-11-02 |
 | 1679 | [Max Number of K-Sum Pairs](Medium/1679.MaxNumberOfKSumPairs) | Array, Hash Table, Two Pointers, Sorting | [Java](Medium/1679.MaxNumberOfKSumPairs/Solution.java) | 2026-11-02 |
+| 2095 | [Delete the Middle Node of a Linked List](Medium/2095.DeleteTheMiddleNodeOfALinkedList) | Linked List, Two Pointers | [Java](Medium/2095.DeleteTheMiddleNodeOfALinkedList/Solution.java) | 2026-11-03 |
+| 2390 | [Removing Stars From a String](Medium/2390.RemovingStarsFromAString) | String, Stack, Simulation | [Java](Medium/2390.RemovingStarsFromAString/Solution.java) | 2026-11-03 |
 
 ## Hard (1)
 

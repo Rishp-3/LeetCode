@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2187579547,
+  "last_submission_id": 2188572754,
   "problems": {
     "1071": {
       "description": "For two strings `s` and `t`, we say \"`t` divides `s`\" if and only if `s = t + t + t + ... + t + t` (i.e., `t` is concatenated with itself one or more times).\n\nGiven two strings `str1` and `str2`, return *the largest string *`x`* such that *`x`* divides both *`str1`* and *`str2`.\n\n**Example 1:**\n\n**Input:** str1 = \"ABCABC\", str2 = \"ABC\"\n\n**Output:** \"ABC\"\n\n**Example 2:**\n\n**Input:** str1 = \"ABABAB\", str2 = \"ABAB\"\n\n**Output:** \"AB\"\n\n**Example 3:**\n\n**Input:** str1 = \"LEET\", str2 = \"CODE\"\n\n**Output:** \"\"\n\n**Example 4:**\n\n**Input:** str1 = \"AAAAAB\", str2 = \"AAA\"\n\n**Output:** \"\"\u200b\u200b\u200b\u200b\u200b\u200b\u200b\n\n**Constraints:**\n\n- `1 <= str1.length, str2.length <= 1000`\n- `str1` and `str2` consist of English uppercase letters.",
@@ -88,6 +88,31 @@
         "Linked List",
         "Math",
         "Recursion"
+      ]
+    },
+    "2095": {
+      "description": "You are given the `head` of a linked list. **Delete** the **middle node**, and return *the* `head` *of the modified linked list*.\n\nThe **middle node** of a linked list of size `n` is the `\u230an / 2\u230b^th` node from the **start** using **0-based indexing**, where `\u230ax\u230b` denotes the largest integer less than or equal to `x`.\n\n- For `n` = `1`, `2`, `3`, `4`, and `5`, the middle nodes are `0`, `1`, `1`, `2`, and `2`, respectively.\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2021/11/16/eg1drawio.png)\n\n```text\n\nInput: head = [1,3,4,7,1,2,6]\nOutput: [1,3,4,1,2,6]\nExplanation:\nThe above figure represents the given linked list. The indices of the nodes are written below.\nSince n = 7, node 3 with value 7 is the middle node, which is marked in red.\nWe return the new list after removing this node.\n\n```\n\n**Example 2:**\n\n![](https://assets.leetcode.com/uploads/2021/11/16/eg2drawio.png)\n\n```text\n\nInput: head = [1,2,3,4]\nOutput: [1,2,4]\nExplanation:\nThe above figure represents the given linked list.\nFor n = 4, node 2 with value 3 is the middle node, which is marked in red.\n\n```\n\n**Example 3:**\n\n![](https://assets.leetcode.com/uploads/2021/11/16/eg3drawio.png)\n\n```text\n\nInput: head = [2,1]\nOutput: [2]\nExplanation:\nThe above figure represents the given linked list.\nFor n = 2, node 1 with value 1 is the middle node, which is marked in red.\nNode 0 with value 2 is the only node remaining after removing node 1.\n```\n\n**Constraints:**\n\n- The number of nodes in the list is in the range `[1, 10^5]`.\n- `1 <= Node.val <= 10^5`",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-03",
+      "id": 2095,
+      "slug": "delete-the-middle-node-of-a-linked-list",
+      "title": "Delete the Middle Node of a Linked List",
+      "topics": [
+        "Linked List",
+        "Two Pointers"
+      ]
+    },
+    "2390": {
+      "description": "You are given a string `s`, which contains stars `*`.\n\nIn one operation, you can:\n\n- Choose a star in `s`.\n- Remove the closest **non-star** character to its **left**, as well as remove the star itself.\n\nReturn *the string after **all** stars have been removed*.\n\n**Note:**\n\n- The input will be generated such that the operation is always possible.\n- It can be shown that the resulting string will always be unique.\n\n**Example 1:**\n\n```text\n\nInput: s = \"leet**cod*e\"\nOutput: \"lecoe\"\nExplanation: Performing the removals from left to right:\n- The closest character to the 1st star is 't' in \"leet**cod*e\". s becomes \"lee*cod*e\".\n- The closest character to the 2nd star is 'e' in \"lee*cod*e\". s becomes \"lecod*e\".\n- The closest character to the 3rd star is 'd' in \"lecod*e\". s becomes \"lecoe\".\nThere are no more stars, so we return \"lecoe\".\n```\n\n**Example 2:**\n\n```text\n\nInput: s = \"erase*****\"\nOutput: \"\"\nExplanation: The entire string is removed, so we return an empty string.\n\n```\n\n**Constraints:**\n\n- `1 <= s.length <= 10^5`\n- `s` consists of lowercase English letters and stars `*`.\n- The operation above can be performed on `s`.",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-03",
+      "id": 2390,
+      "slug": "removing-stars-from-a-string",
+      "title": "Removing Stars From a String",
+      "topics": [
+        "String",
+        "Stack",
+        "Simulation"
       ]
     },
     "283": {
@@ -193,6 +218,7 @@
     "add-two-numbers": "2",
     "can-place-flowers": "605",
     "container-with-most-water": "11",
+    "delete-the-middle-node-of-a-linked-list": "2095",
     "first-missing-positive": "41",
     "greatest-common-divisor-of-strings": "1071",
     "increasing-triplet-subsequence": "334",
@@ -202,6 +228,7 @@
     "maximum-average-subarray-i": "643",
     "merge-strings-alternately": "1768",
     "move-zeroes": "283",
+    "removing-stars-from-a-string": "2390",
     "reverse-vowels-of-a-string": "345",
     "reverse-words-in-a-string": "151",
     "string-compression": "443"
