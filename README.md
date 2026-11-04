@@ -29,23 +29,26 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 8 | 8 | 1 | 17 |
+| 11 | 10 | 1 | 22 |
 
 
-## Easy (8)
+## Easy (11)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
+| 206 | [Reverse Linked List](Easy/206.ReverseLinkedList) | Linked List, Recursion | [Java](Easy/206.ReverseLinkedList/Solution.java) | 2026-11-04 |
 | 283 | [Move Zeroes](Easy/283.MoveZeroes) | Array, Two Pointers | [Java](Easy/283.MoveZeroes/Solution.java) | 2026-10-31 |
 | 345 | [Reverse Vowels of a String](Easy/345.ReverseVowelsOfAString) | Two Pointers, String | [Java](Easy/345.ReverseVowelsOfAString/Solution.java) | 2026-11-01 |
 | 392 | [Is Subsequence](Easy/392.IsSubsequence) | Two Pointers, String, Dynamic Programming | [Java](Easy/392.IsSubsequence/Solution.java) | 2026-11-02 |
 | 605 | [Can Place Flowers](Easy/605.CanPlaceFlowers) | Array, Greedy | [Java](Easy/605.CanPlaceFlowers/Solution.java) | 2026-10-30 |
 | 643 | [Maximum Average Subarray I](Easy/643.MaximumAverageSubarrayI) | Array, Sliding Window | [Java](Easy/643.MaximumAverageSubarrayI/Solution.java) | 2026-11-02 |
+| 724 | [Find Pivot Index](Easy/724.FindPivotIndex) | Array, Prefix Sum | [Java](Easy/724.FindPivotIndex/Solution.java) | 2026-11-04 |
 | 1071 | [Greatest Common Divisor of Strings](Easy/1071.GreatestCommonDivisorOfStrings) | Math, String, Euclidean Algorithm, Greatest Common Divisor | [Java](Easy/1071.GreatestCommonDivisorOfStrings/Solution.java) | 2026-10-31 |
 | 1431 | [Kids With the Greatest Number of Candies](Easy/1431.KidsWithTheGreatestNumberOfCandies) | Array | [Java](Easy/1431.KidsWithTheGreatestNumberOfCandies/Solution.java) | 2026-10-30 |
 | 1768 | [Merge Strings Alternately](Easy/1768.MergeStringsAlternately) | Two Pointers, String | [Java](Easy/1768.MergeStringsAlternately/Solution.java) | 2026-10-30 |
+| 2215 | [Find the Difference of Two Arrays](Easy/2215.FindTheDifferenceOfTwoArrays) | Array, Hash Table | [Java](Easy/2215.FindTheDifferenceOfTwoArrays/Solution.java) | 2026-11-04 |
 
-## Medium (8)
+## Medium (10)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
@@ -54,8 +57,10 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 151 | [Reverse Words in a String](Medium/151.ReverseWordsInAString) | Two Pointers, String | [Java](Medium/151.ReverseWordsInAString/Solution.java) | 2026-11-01 |
 | 334 | [Increasing Triplet Subsequence](Medium/334.IncreasingTripletSubsequence) | Array, Greedy, Longest Increasing Subsequence | [Java](Medium/334.IncreasingTripletSubsequence/Solution.java) | 2026-11-02 |
 | 443 | [String Compression](Medium/443.StringCompression) | Two Pointers, String | [Java](Medium/443.StringCompression/Solution.java) | 2026-11-02 |
+| 1456 | [Maximum Number of Vowels in a Substring of Given Length](Medium/1456.MaximumNumberOfVowelsInASubstringOfGivenLength) | String, Sliding Window | [Java](Medium/1456.MaximumNumberOfVowelsInASubstringOfGivenLength/Solution.java) | 2026-11-03 |
 | 1679 | [Max Number of K-Sum Pairs](Medium/1679.MaxNumberOfKSumPairs) | Array, Hash Table, Two Pointers, Sorting | [Java](Medium/1679.MaxNumberOfKSumPairs/Solution.java) | 2026-11-02 |
 | 2095 | [Delete the Middle Node of a Linked List](Medium/2095.DeleteTheMiddleNodeOfALinkedList) | Linked List, Two Pointers | [Java](Medium/2095.DeleteTheMiddleNodeOfALinkedList/Solution.java) | 2026-11-03 |
+| 2130 | [Maximum Twin Sum of a Linked List](Medium/2130.MaximumTwinSumOfALinkedList) | Linked List, Two Pointers, Stack | [Java](Medium/2130.MaximumTwinSumOfALinkedList/Solution.java) | 2026-11-04 |
 | 2390 | [Removing Stars From a String](Medium/2390.RemovingStarsFromAString) | String, Stack, Simulation | [Java](Medium/2390.RemovingStarsFromAString/Solution.java) | 2026-11-03 |
 
 ## Hard (1)
