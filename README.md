@@ -29,15 +29,16 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 11 | 10 | 2 | 23 |
+| 12 | 10 | 2 | 24 |
 
 
-## Easy (11)
+## Easy (12)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
 | 206 | [Reverse Linked List](Easy/206.ReverseLinkedList) | Linked List, Recursion | [Java](Easy/206.ReverseLinkedList/Solution.java) | 2026-11-04 |
 | 283 | [Move Zeroes](Easy/283.MoveZeroes) | Array, Two Pointers | [Java](Easy/283.MoveZeroes/Solution.java) | 2026-10-31 |
+| 338 | [Counting Bits](Easy/338.CountingBits) | Dynamic Programming, Bit Manipulation | [Java](Easy/338.CountingBits/Solution.java) | 2026-11-05 |
 | 345 | [Reverse Vowels of a String](Easy/345.ReverseVowelsOfAString) | Two Pointers, String | [Java](Easy/345.ReverseVowelsOfAString/Solution.java) | 2026-11-01 |
 | 392 | [Is Subsequence](Easy/392.IsSubsequence) | Two Pointers, String, Dynamic Programming | [Java](Easy/392.IsSubsequence/Solution.java) | 2026-11-02 |
 | 605 | [Can Place Flowers](Easy/605.CanPlaceFlowers) | Array, Greedy | [Java](Easy/605.CanPlaceFlowers/Solution.java) | 2026-10-30 |

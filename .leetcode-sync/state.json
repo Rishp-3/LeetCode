@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2189729044,
+  "last_submission_id": 2189745646,
   "problems": {
     "1071": {
       "description": "For two strings `s` and `t`, we say \"`t` divides `s`\" if and only if `s = t + t + t + ... + t + t` (i.e., `t` is concatenated with itself one or more times).\n\nGiven two strings `str1` and `str2`, return *the largest string *`x`* such that *`x`* divides both *`str1`* and *`str2`.\n\n**Example 1:**\n\n**Input:** str1 = \"ABCABC\", str2 = \"ABC\"\n\n**Output:** \"ABC\"\n\n**Example 2:**\n\n**Input:** str1 = \"ABABAB\", str2 = \"ABAB\"\n\n**Output:** \"AB\"\n\n**Example 3:**\n\n**Input:** str1 = \"LEET\", str2 = \"CODE\"\n\n**Output:** \"\"\n\n**Example 4:**\n\n**Input:** str1 = \"AAAAAB\", str2 = \"AAA\"\n\n**Output:** \"\"\u200b\u200b\u200b\u200b\u200b\u200b\u200b\n\n**Constraints:**\n\n- `1 <= str1.length, str2.length <= 1000`\n- `str1` and `str2` consist of English uppercase letters.",
@@ -189,6 +189,18 @@
         "Longest Increasing Subsequence"
       ]
     },
+    "338": {
+      "description": "Given an integer `n`, return *an array *`ans`* of length *`n + 1`* such that for each *`i`* *(`0 <= i <= n`)*, *`ans[i]`* is the **number of ***`1`***'s** in the binary representation of *`i`.\n\n Do not solve it with built-in functions (i.e., like `__builtin_popcount` in C++).\n\n**Example 1:**\n\n```text\n\nInput: n = 2\nOutput: [0,1,1]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\n\n```\n\n**Example 2:**\n\n```text\n\nInput: n = 5\nOutput: [0,1,1,2,1,2]\nExplanation:\n0 --> 0\n1 --> 1\n2 --> 10\n3 --> 11\n4 --> 100\n5 --> 101\n\n```\n\n**Constraints:**\n\n- `0 <= n <= 10^5`\n\n**Follow up:**\n\n- It is very easy to come up with a solution with a runtime of `O(n log n)`. Can you do it in linear time `O(n)` and possibly in a single pass?",
+      "difficulty": "Easy",
+      "first_solved": "2026-11-05",
+      "id": 338,
+      "slug": "counting-bits",
+      "title": "Counting Bits",
+      "topics": [
+        "Dynamic Programming",
+        "Bit Manipulation"
+      ]
+    },
     "345": {
       "description": "Given a string `s`, reverse only all the vowels in the string and return it.\n\nThe vowels are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`, and they can appear in both lower and upper cases, more than once.\n\n**Example 1:**\n\n**Input:** s = \"IceCreAm\"\n\n**Output:** \"AceCreIm\"\n\n**Explanation:**\n\nThe vowels in `s` are `['I', 'e', 'e', 'A']`. On reversing the vowels, s becomes `\"AceCreIm\"`.\n\n**Example 2:**\n\n**Input:** s = \"leetcode\"\n\n**Output:** \"leotcede\"\n\n**Constraints:**\n\n- `1 <= s.length <= 3 * 10^5`\n- `s` consist of **printable ASCII** characters.",
       "difficulty": "Easy",
@@ -294,6 +306,7 @@
     "add-two-numbers": "2",
     "can-place-flowers": "605",
     "container-with-most-water": "11",
+    "counting-bits": "338",
     "delete-the-middle-node-of-a-linked-list": "2095",
     "find-pivot-index": "724",
     "find-the-difference-of-two-arrays": "2215",
