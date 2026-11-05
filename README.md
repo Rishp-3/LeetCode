@@ -29,7 +29,7 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 11 | 10 | 1 | 22 |
+| 11 | 10 | 2 | 23 |
 
 
 ## Easy (11)
@@ -63,11 +63,12 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 2130 | [Maximum Twin Sum of a Linked List](Medium/2130.MaximumTwinSumOfALinkedList) | Linked List, Two Pointers, Stack | [Java](Medium/2130.MaximumTwinSumOfALinkedList/Solution.java) | 2026-11-04 |
 | 2390 | [Removing Stars From a String](Medium/2390.RemovingStarsFromAString) | String, Stack, Simulation | [Java](Medium/2390.RemovingStarsFromAString/Solution.java) | 2026-11-03 |
 
-## Hard (1)
+## Hard (2)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
 | 41 | [First Missing Positive](Hard/41.FirstMissingPositive) | Array, Hash Table | [Java](Hard/41.FirstMissingPositive/Solution.java) | 2026-11-01 |
+| 42 | [Trapping Rain Water](Hard/42.TrappingRainWater) | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack | [Java](Hard/42.TrappingRainWater/Solution.java) | 2026-11-05 |
 
 <!-- LEETCODE-SYNC:END -->
 
