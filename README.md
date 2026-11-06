@@ -29,13 +29,14 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 12 | 10 | 2 | 24 |
+| 13 | 12 | 2 | 27 |
 
 
-## Easy (12)
+## Easy (13)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
+| 104 | [Maximum Depth of Binary Tree](Easy/104.MaximumDepthOfBinaryTree) | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [Java](Easy/104.MaximumDepthOfBinaryTree/Solution.java) | 2026-11-05 |
 | 206 | [Reverse Linked List](Easy/206.ReverseLinkedList) | Linked List, Recursion | [Java](Easy/206.ReverseLinkedList/Solution.java) | 2026-11-04 |
 | 283 | [Move Zeroes](Easy/283.MoveZeroes) | Array, Two Pointers | [Java](Easy/283.MoveZeroes/Solution.java) | 2026-10-31 |
 | 338 | [Counting Bits](Easy/338.CountingBits) | Dynamic Programming, Bit Manipulation | [Java](Easy/338.CountingBits/Solution.java) | 2026-11-05 |
@@ -49,15 +50,17 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 1768 | [Merge Strings Alternately](Easy/1768.MergeStringsAlternately) | Two Pointers, String | [Java](Easy/1768.MergeStringsAlternately/Solution.java) | 2026-10-30 |
 | 2215 | [Find the Difference of Two Arrays](Easy/2215.FindTheDifferenceOfTwoArrays) | Array, Hash Table | [Java](Easy/2215.FindTheDifferenceOfTwoArrays/Solution.java) | 2026-11-04 |
 
-## Medium (10)
+## Medium (12)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
 | 2 | [Add Two Numbers](Medium/2.AddTwoNumbers) | Linked List, Math, Recursion | [Java](Medium/2.AddTwoNumbers/Solution.java) | 2026-10-31 |
 | 11 | [Container With Most Water](Medium/11.ContainerWithMostWater) | Array, Two Pointers, Greedy | [Java](Medium/11.ContainerWithMostWater/Solution.java) | 2026-11-02 |
+| 122 | [Best Time to Buy and Sell Stock II](Medium/122.BestTimeToBuyAndSellStockIi) | Array, Dynamic Programming, Greedy | [Java](Medium/122.BestTimeToBuyAndSellStockIi/Solution.java) | 2026-11-05 |
 | 151 | [Reverse Words in a String](Medium/151.ReverseWordsInAString) | Two Pointers, String | [Java](Medium/151.ReverseWordsInAString/Solution.java) | 2026-11-01 |
 | 334 | [Increasing Triplet Subsequence](Medium/334.IncreasingTripletSubsequence) | Array, Greedy, Longest Increasing Subsequence | [Java](Medium/334.IncreasingTripletSubsequence/Solution.java) | 2026-11-02 |
 | 443 | [String Compression](Medium/443.StringCompression) | Two Pointers, String | [Java](Medium/443.StringCompression/Solution.java) | 2026-11-02 |
+| 714 | [Best Time to Buy and Sell Stock with Transaction Fee](Medium/714.BestTimeToBuyAndSellStockWithTransactionFee) | Array, Dynamic Programming, Greedy | [Java](Medium/714.BestTimeToBuyAndSellStockWithTransactionFee/Solution.java) | 2026-11-05 |
 | 1456 | [Maximum Number of Vowels in a Substring of Given Length](Medium/1456.MaximumNumberOfVowelsInASubstringOfGivenLength) | String, Sliding Window | [Java](Medium/1456.MaximumNumberOfVowelsInASubstringOfGivenLength/Solution.java) | 2026-11-03 |
 | 1679 | [Max Number of K-Sum Pairs](Medium/1679.MaxNumberOfKSumPairs) | Array, Hash Table, Two Pointers, Sorting | [Java](Medium/1679.MaxNumberOfKSumPairs/Solution.java) | 2026-11-02 |
 | 2095 | [Delete the Middle Node of a Linked List](Medium/2095.DeleteTheMiddleNodeOfALinkedList) | Linked List, Two Pointers | [Java](Medium/2095.DeleteTheMiddleNodeOfALinkedList/Solution.java) | 2026-11-03 |
