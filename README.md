@@ -29,7 +29,7 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 13 | 12 | 2 | 27 |
+| 13 | 14 | 2 | 29 |
 
 
 ## Easy (13)
@@ -50,7 +50,7 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 1768 | [Merge Strings Alternately](Easy/1768.MergeStringsAlternately) | Two Pointers, String | [Java](Easy/1768.MergeStringsAlternately/Solution.java) | 2026-10-30 |
 | 2215 | [Find the Difference of Two Arrays](Easy/2215.FindTheDifferenceOfTwoArrays) | Array, Hash Table | [Java](Easy/2215.FindTheDifferenceOfTwoArrays/Solution.java) | 2026-11-04 |
 
-## Medium (12)
+## Medium (14)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
@@ -59,8 +59,10 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 122 | [Best Time to Buy and Sell Stock II](Medium/122.BestTimeToBuyAndSellStockIi) | Array, Dynamic Programming, Greedy | [Java](Medium/122.BestTimeToBuyAndSellStockIi/Solution.java) | 2026-11-05 |
 | 151 | [Reverse Words in a String](Medium/151.ReverseWordsInAString) | Two Pointers, String | [Java](Medium/151.ReverseWordsInAString/Solution.java) | 2026-11-01 |
 | 334 | [Increasing Triplet Subsequence](Medium/334.IncreasingTripletSubsequence) | Array, Greedy, Longest Increasing Subsequence | [Java](Medium/334.IncreasingTripletSubsequence/Solution.java) | 2026-11-02 |
+| 394 | [Decode String](Medium/394.DecodeString) | String, Stack, Recursion | [Java](Medium/394.DecodeString/Solution.java) | 2026-11-06 |
 | 443 | [String Compression](Medium/443.StringCompression) | Two Pointers, String | [Java](Medium/443.StringCompression/Solution.java) | 2026-11-02 |
 | 714 | [Best Time to Buy and Sell Stock with Transaction Fee](Medium/714.BestTimeToBuyAndSellStockWithTransactionFee) | Array, Dynamic Programming, Greedy | [Java](Medium/714.BestTimeToBuyAndSellStockWithTransactionFee/Solution.java) | 2026-11-05 |
+| 735 | [Asteroid Collision](Medium/735.AsteroidCollision) | Array, Stack, Simulation | [Java](Medium/735.AsteroidCollision/Solution.java) | 2026-11-06 |
 | 1456 | [Maximum Number of Vowels in a Substring of Given Length](Medium/1456.MaximumNumberOfVowelsInASubstringOfGivenLength) | String, Sliding Window | [Java](Medium/1456.MaximumNumberOfVowelsInASubstringOfGivenLength/Solution.java) | 2026-11-03 |
 | 1679 | [Max Number of K-Sum Pairs](Medium/1679.MaxNumberOfKSumPairs) | Array, Hash Table, Two Pointers, Sorting | [Java](Medium/1679.MaxNumberOfKSumPairs/Solution.java) | 2026-11-02 |
 | 2095 | [Delete the Middle Node of a Linked List](Medium/2095.DeleteTheMiddleNodeOfALinkedList) | Linked List, Two Pointers | [Java](Medium/2095.DeleteTheMiddleNodeOfALinkedList/Solution.java) | 2026-11-03 |

@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2190138758,
+  "last_submission_id": 2190705102,
   "problems": {
     "104": {
       "description": "Given the `root` of a binary tree, return *its maximum depth*.\n\nA binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg)\n\n```text\n\nInput: root = [3,9,20,null,null,15,7]\nOutput: 3\n\n```\n\n**Example 2:**\n\n```text\n\nInput: root = [1,null,2]\nOutput: 2\n\n```\n\n**Constraints:**\n\n- The number of nodes in the tree is in the range `[0, 10^4]`.\n- `-100 <= Node.val <= 100`",
@@ -253,6 +253,19 @@
         "Dynamic Programming"
       ]
     },
+    "394": {
+      "description": "Given an encoded string, return its decoded string.\n\nThe encoding rule is: `k[encoded_string]`, where the `encoded_string` inside the square brackets is being repeated exactly `k` times. Note that `k` is guaranteed to be a positive integer.\n\nYou may assume that the input string is always valid; there are no extra white spaces, square brackets are well-formed, etc. Furthermore, you may assume that the original data does not contain any digits and that digits are only for those repeat numbers, `k`. For example, there will not be input like `3a` or `2[4]`.\n\nThe test cases are generated so that the length of the output will never exceed `10^5`.\n\n**Example 1:**\n\n```text\n\nInput: s = \"3[a]2[bc]\"\nOutput: \"aaabcbc\"\n\n```\n\n**Example 2:**\n\n```text\n\nInput: s = \"3[a2[c]]\"\nOutput: \"accaccacc\"\n\n```\n\n**Example 3:**\n\n```text\n\nInput: s = \"2[abc]3[cd]ef\"\nOutput: \"abcabccdcdcdef\"\n\n```\n\n**Constraints:**\n\n- `1 <= s.length <= 30`\n- `s` consists of lowercase English letters, digits, and square brackets `'[]'`.\n- `s` is guaranteed to be **a valid** input.\n- All the integers in `s` are in the range `[1, 300]`.",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-06",
+      "id": 394,
+      "slug": "decode-string",
+      "title": "Decode String",
+      "topics": [
+        "String",
+        "Stack",
+        "Recursion"
+      ]
+    },
     "41": {
       "description": "Given an unsorted integer array `nums`. Return the *smallest positive integer* that is *not present* in `nums`.\n\nYou must implement an algorithm that runs in `O(n)` time and uses `O(1)` auxiliary space.\n\n**Example 1:**\n\n```text\n\nInput: nums = [1,2,0]\nOutput: 3\nExplanation: The numbers in the range [1,2] are all in the array.\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [3,4,-1,1]\nOutput: 2\nExplanation: 1 is in the array but 2 is missing.\n\n```\n\n**Example 3:**\n\n```text\n\nInput: nums = [7,8,9,11,12]\nOutput: 1\nExplanation: The smallest positive integer 1 is missing.\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 10^5`\n- `-2^31 <= nums[i] <= 2^31 - 1`",
       "difficulty": "Hard",
@@ -340,15 +353,30 @@
         "Array",
         "Prefix Sum"
       ]
+    },
+    "735": {
+      "description": "We are given an array `asteroids` of integers representing asteroids in a row. The indices of the asteroid in the array represent their relative position in space.\n\nFor each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.\n\nFind out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode. Two asteroids moving in the same direction will never meet.\n\n**Example 1:**\n\n```text\n\nInput: asteroids = [5,10,-5]\nOutput: [5,10]\nExplanation: The 10 and -5 collide resulting in 10. The 5 and 10 never collide.\n\n```\n\n**Example 2:**\n\n```text\n\nInput: asteroids = [8,-8]\nOutput: []\nExplanation: The 8 and -8 collide exploding each other.\n\n```\n\n**Example 3:**\n\n```text\n\nInput: asteroids = [10,2,-5]\nOutput: [10]\nExplanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.\n\n```\n\n**Example 4:**\n\n```text\n\nInput: asteroids = [3,5,-6,2,-1,4]\u200b\u200b\u200b\u200b\u200b\u200b\u200b\nOutput: [-6,2,4]\nExplanation: The asteroid -6 makes the asteroid 3 and 5 explode, and then continues going left. On the other side, the asteroid 2 destroys -1. Since 2 and 4 are both moving right, they never collide.\n\n```\n\n**Constraints:**\n\n- `2 <= asteroids.length <= 10^4`\n- `-1000 <= asteroids[i] <= 1000`\n- `asteroids[i] != 0`",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-06",
+      "id": 735,
+      "slug": "asteroid-collision",
+      "title": "Asteroid Collision",
+      "topics": [
+        "Array",
+        "Stack",
+        "Simulation"
+      ]
     }
   },
   "slugs": {
     "add-two-numbers": "2",
+    "asteroid-collision": "735",
     "best-time-to-buy-and-sell-stock-ii": "122",
     "best-time-to-buy-and-sell-stock-with-transaction-fee": "714",
     "can-place-flowers": "605",
     "container-with-most-water": "11",
     "counting-bits": "338",
+    "decode-string": "394",
     "delete-the-middle-node-of-a-linked-list": "2095",
     "find-pivot-index": "724",
     "find-the-difference-of-two-arrays": "2215",
