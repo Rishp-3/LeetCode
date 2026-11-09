@@ -29,13 +29,14 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 13 | 14 | 2 | 29 |
+| 14 | 14 | 2 | 30 |
 
 
-## Easy (13)
+## Easy (14)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
+| 26 | [Remove Duplicates from Sorted Array](Easy/26.RemoveDuplicatesFromSortedArray) | Array, Two Pointers | [Java](Easy/26.RemoveDuplicatesFromSortedArray/Solution.java) | 2026-11-07 |
 | 104 | [Maximum Depth of Binary Tree](Easy/104.MaximumDepthOfBinaryTree) | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [Java](Easy/104.MaximumDepthOfBinaryTree/Solution.java) | 2026-11-05 |
 | 206 | [Reverse Linked List](Easy/206.ReverseLinkedList) | Linked List, Recursion | [Java](Easy/206.ReverseLinkedList/Solution.java) | 2026-11-04 |
 | 283 | [Move Zeroes](Easy/283.MoveZeroes) | Array, Two Pointers | [Java](Easy/283.MoveZeroes/Solution.java) | 2026-10-31 |

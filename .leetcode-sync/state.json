@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2190705102,
+  "last_submission_id": 2192157559,
   "problems": {
     "104": {
       "description": "Given the `root` of a binary tree, return *its maximum depth*.\n\nA binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg)\n\n```text\n\nInput: root = [3,9,20,null,null,15,7]\nOutput: 3\n\n```\n\n**Example 2:**\n\n```text\n\nInput: root = [1,null,2]\nOutput: 2\n\n```\n\n**Constraints:**\n\n- The number of nodes in the tree is in the range `[0, 10^4]`.\n- `-100 <= Node.val <= 100`",
@@ -189,6 +189,18 @@
         "String",
         "Stack",
         "Simulation"
+      ]
+    },
+    "26": {
+      "description": "Given an integer array `nums` sorted in **non-decreasing order**, remove the duplicates **in-place** such that each unique element appears only **once**. The **relative order** of the elements should be kept the **same**.\n\nConsider the number of *unique elements* in `nums` to be `k**\u200b\u200b\u200b\u200b\u200b\u200b\u200b**`\u200b\u200b\u200b\u200b\u200b\u200b\u200b. After removing duplicates, return the number of unique elements `k`.\n\nThe first `k` elements of `nums` should contain the unique numbers in **sorted order**. The remaining elements beyond index `k - 1` can be ignored.\n\n**Custom Judge:**\n\nThe judge will test your solution with the following code:\n\n```text\n\nint[] nums = [...]; // Input array\nint[] expectedNums = [...]; // The expected answer with correct length\n\nint k = removeDuplicates(nums); // Calls your implementation\n\nassert k == expectedNums.length;\nfor (int i = 0; i < k; i++) {\n    assert nums[i] == expectedNums[i];\n}\n\n```\n\nIf all assertions pass, then your solution will be **accepted**.\n\n**Example 1:**\n\n```text\n\nInput: nums = [1,1,2]\nOutput: 2, nums = [1,2,_]\nExplanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [0,0,1,1,1,2,2,3,3,4]\nOutput: 5, nums = [0,1,2,3,4,_,_,_,_,_]\nExplanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.\nIt does not matter what you leave beyond the returned k (hence they are underscores).\n\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 3 * 10^4`\n- `-100 <= nums[i] <= 100`\n- `nums` is sorted in **non-decreasing** order.",
+      "difficulty": "Easy",
+      "first_solved": "2026-11-07",
+      "id": 26,
+      "slug": "remove-duplicates-from-sorted-array",
+      "title": "Remove Duplicates from Sorted Array",
+      "topics": [
+        "Array",
+        "Two Pointers"
       ]
     },
     "283": {
@@ -392,6 +404,7 @@
     "maximum-twin-sum-of-a-linked-list": "2130",
     "merge-strings-alternately": "1768",
     "move-zeroes": "283",
+    "remove-duplicates-from-sorted-array": "26",
     "removing-stars-from-a-string": "2390",
     "reverse-linked-list": "206",
     "reverse-vowels-of-a-string": "345",
