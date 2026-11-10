@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2192157559,
+  "last_submission_id": 2192507205,
   "problems": {
     "104": {
       "description": "Given the `root` of a binary tree, return *its maximum depth*.\n\nA binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg)\n\n```text\n\nInput: root = [3,9,20,null,null,15,7]\nOutput: 3\n\n```\n\n**Example 2:**\n\n```text\n\nInput: root = [1,null,2]\nOutput: 2\n\n```\n\n**Constraints:**\n\n- The number of nodes in the tree is in the range `[0, 10^4]`.\n- `-100 <= Node.val <= 100`",
@@ -178,6 +178,18 @@
         "Hash Table"
       ]
     },
+    "238": {
+      "description": "Given an integer array `nums`, return *an array* `answer` *such that* `answer[i]` *is equal to the product of all the elements of* `nums` *except* `nums[i]`.\n\nThe product of any prefix or suffix of `nums` is **guaranteed** to fit in a **32-bit** integer.\n\nYou must write an algorithm that runs in `O(n)` time and without using the division operation.\n\n**Example 1:**\n\n```text\nInput: nums = [1,2,3,4]\nOutput: [24,12,8,6]\n\n```\n\n**Example 2:**\n\n```text\nInput: nums = [-1,1,0,-3,3]\nOutput: [0,0,9,0,0]\n\n```\n\n**Constraints:**\n\n- `2 <= nums.length <= 10^5`\n- `-30 <= nums[i] <= 30`\n- The input is generated such that `answer[i]` is **guaranteed** to fit in a **32-bit** integer.\n\n**Follow up:** Can you solve the problem in `O(1)` extra space complexity? (The output array **does not** count as extra space for space complexity analysis.)",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-09",
+      "id": 238,
+      "slug": "product-of-array-except-self",
+      "title": "Product of Array Except Self",
+      "topics": [
+        "Array",
+        "Prefix Sum"
+      ]
+    },
     "2390": {
       "description": "You are given a string `s`, which contains stars `*`.\n\nIn one operation, you can:\n\n- Choose a star in `s`.\n- Remove the closest **non-star** character to its **left**, as well as remove the star itself.\n\nReturn *the string after **all** stars have been removed*.\n\n**Note:**\n\n- The input will be generated such that the operation is always possible.\n- It can be shown that the resulting string will always be unique.\n\n**Example 1:**\n\n```text\n\nInput: s = \"leet**cod*e\"\nOutput: \"lecoe\"\nExplanation: Performing the removals from left to right:\n- The closest character to the 1st star is 't' in \"leet**cod*e\". s becomes \"lee*cod*e\".\n- The closest character to the 2nd star is 'e' in \"lee*cod*e\". s becomes \"lecod*e\".\n- The closest character to the 3rd star is 'd' in \"lecod*e\". s becomes \"lecoe\".\nThere are no more stars, so we return \"lecoe\".\n```\n\n**Example 2:**\n\n```text\n\nInput: s = \"erase*****\"\nOutput: \"\"\nExplanation: The entire string is removed, so we return an empty string.\n\n```\n\n**Constraints:**\n\n- `1 <= s.length <= 10^5`\n- `s` consists of lowercase English letters and stars `*`.\n- The operation above can be performed on `s`.",
       "difficulty": "Medium",
@@ -213,6 +225,17 @@
       "topics": [
         "Array",
         "Two Pointers"
+      ]
+    },
+    "328": {
+      "description": "Given the `head` of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return *the reordered list*.\n\nThe **first** node is considered **odd**, and the **second** node is **even**, and so on.\n\nNote that the relative order inside both the even and odd groups should remain as it was in the input.\n\nYou must solve the problem in `O(1)` extra space complexity and `O(n)` time complexity.\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2021/03/10/oddeven-linked-list.jpg)\n\n```text\n\nInput: head = [1,2,3,4,5]\nOutput: [1,3,5,2,4]\n\n```\n\n**Example 2:**\n\n![](https://assets.leetcode.com/uploads/2021/03/10/oddeven2-linked-list.jpg)\n\n```text\n\nInput: head = [2,1,3,5,6,4,7]\nOutput: [2,3,6,7,1,5,4]\n\n```\n\n**Constraints:**\n\n- The number of nodes in the linked list is in the range `[0, 10^4]`.\n- `-10^6 <= Node.val <= 10^6`",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-09",
+      "id": 328,
+      "slug": "odd-even-linked-list",
+      "title": "Odd Even Linked List",
+      "topics": [
+        "Linked List"
       ]
     },
     "334": {
@@ -317,6 +340,18 @@
         "String"
       ]
     },
+    "50": {
+      "description": "Implement pow(x, n), which calculates `x` raised to the power `n` (i.e., `x^n`).\n\n**Example 1:**\n\n```text\n\nInput: x = 2.00000, n = 10\nOutput: 1024.00000\n\n```\n\n**Example 2:**\n\n```text\n\nInput: x = 2.10000, n = 3\nOutput: 9.26100\n\n```\n\n**Example 3:**\n\n```text\n\nInput: x = 2.00000, n = -2\nOutput: 0.25000\nExplanation: 2-2 = 1/22 = 1/4 = 0.25\n\n```\n\n**Constraints:**\n\n- `-100.0 < x < 100.0`\n- `-2^31 <= n <= 2^31-1`\n- `n` is an integer.\n- Either `x` is not zero or `n > 0`.\n- `-10^4 <= x^n <= 10^4`",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-09",
+      "id": 50,
+      "slug": "powx-n",
+      "title": "Pow(x, n)",
+      "topics": [
+        "Math",
+        "Recursion"
+      ]
+    },
     "605": {
       "description": "You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in **adjacent** plots.\n\nGiven an integer array `flowerbed` containing `0`'s and `1`'s, where `0` means empty and `1` means not empty, and an integer `n`, return `true` *if* `n` *new flowers can be planted in the* `flowerbed` *without violating the no-adjacent-flowers rule and* `false` *otherwise*.\n\n**Example 1:**\n\n```text\nInput: flowerbed = [1,0,0,0,1], n = 1\nOutput: true\n\n```\n\n**Example 2:**\n\n```text\nInput: flowerbed = [1,0,0,0,1], n = 2\nOutput: false\n\n```\n\n**Constraints:**\n\n- `1 <= flowerbed.length <= 2 * 10^4`\n- `flowerbed[i]` is `0` or `1`.\n- There are no two adjacent flowers in `flowerbed`.\n- `0 <= n <= flowerbed.length`",
       "difficulty": "Easy",
@@ -404,6 +439,9 @@
     "maximum-twin-sum-of-a-linked-list": "2130",
     "merge-strings-alternately": "1768",
     "move-zeroes": "283",
+    "odd-even-linked-list": "328",
+    "powx-n": "50",
+    "product-of-array-except-self": "238",
     "remove-duplicates-from-sorted-array": "26",
     "removing-stars-from-a-string": "2390",
     "reverse-linked-list": "206",

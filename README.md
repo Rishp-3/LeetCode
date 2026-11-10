@@ -29,7 +29,7 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 14 | 14 | 2 | 30 |
+| 14 | 17 | 2 | 33 |
 
 
 ## Easy (14)
@@ -51,14 +51,17 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 1768 | [Merge Strings Alternately](Easy/1768.MergeStringsAlternately) | Two Pointers, String | [Java](Easy/1768.MergeStringsAlternately/Solution.java) | 2026-10-30 |
 | 2215 | [Find the Difference of Two Arrays](Easy/2215.FindTheDifferenceOfTwoArrays) | Array, Hash Table | [Java](Easy/2215.FindTheDifferenceOfTwoArrays/Solution.java) | 2026-11-04 |
 
-## Medium (14)
+## Medium (17)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
 | 2 | [Add Two Numbers](Medium/2.AddTwoNumbers) | Linked List, Math, Recursion | [Java](Medium/2.AddTwoNumbers/Solution.java) | 2026-10-31 |
 | 11 | [Container With Most Water](Medium/11.ContainerWithMostWater) | Array, Two Pointers, Greedy | [Java](Medium/11.ContainerWithMostWater/Solution.java) | 2026-11-02 |
+| 50 | [Pow(x, n)](Medium/50.PowXN) | Math, Recursion | [Java](Medium/50.PowXN/Solution.java) | 2026-11-09 |
 | 122 | [Best Time to Buy and Sell Stock II](Medium/122.BestTimeToBuyAndSellStockIi) | Array, Dynamic Programming, Greedy | [Java](Medium/122.BestTimeToBuyAndSellStockIi/Solution.java) | 2026-11-05 |
 | 151 | [Reverse Words in a String](Medium/151.ReverseWordsInAString) | Two Pointers, String | [Java](Medium/151.ReverseWordsInAString/Solution.java) | 2026-11-01 |
+| 238 | [Product of Array Except Self](Medium/238.ProductOfArrayExceptSelf) | Array, Prefix Sum | [Java](Medium/238.ProductOfArrayExceptSelf/Solution.java) | 2026-11-09 |
+| 328 | [Odd Even Linked List](Medium/328.OddEvenLinkedList) | Linked List | [Java](Medium/328.OddEvenLinkedList/Solution.java) | 2026-11-09 |
 | 334 | [Increasing Triplet Subsequence](Medium/334.IncreasingTripletSubsequence) | Array, Greedy, Longest Increasing Subsequence | [Java](Medium/334.IncreasingTripletSubsequence/Solution.java) | 2026-11-02 |
 | 394 | [Decode String](Medium/394.DecodeString) | String, Stack, Recursion | [Java](Medium/394.DecodeString/Solution.java) | 2026-11-06 |
 | 443 | [String Compression](Medium/443.StringCompression) | Two Pointers, String | [Java](Medium/443.StringCompression/Solution.java) | 2026-11-02 |

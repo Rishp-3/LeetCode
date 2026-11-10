@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="780" height="250" viewBox="0 0 780 250" role="img"
-     aria-label="LeetCode progress: 30 solved. Easy 46.7%, Medium 46.7%, Hard 6.7%">
+     aria-label="LeetCode progress: 33 solved. Easy 42.4%, Medium 51.5%, Hard 6.1%">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#161b22"/>
@@ -33,8 +33,8 @@
   <!-- donut: share of solved problems -->
   <g transform="translate(115 142)">
     <circle r="52" fill="none" stroke="#21262d" stroke-width="12"/>
-    <circle r="52" fill="none" stroke="#00b8a3" stroke-width="12" stroke-dasharray="0 326.73" stroke-dashoffset="-1.50" transform="rotate(-90)" filter="url(#glow)"><animate attributeName="stroke-dasharray" from="0 326.73" to="149.47 326.73" dur="0.9s" begin="0.30s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/></circle><circle r="52" fill="none" stroke="#ffc01e" stroke-width="12" stroke-dasharray="0 326.73" stroke-dashoffset="-153.97" transform="rotate(-90)" filter="url(#glow)"><animate attributeName="stroke-dasharray" from="0 326.73" to="149.47 326.73" dur="0.9s" begin="0.65s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/></circle><circle r="52" fill="none" stroke="#ff375f" stroke-width="12" stroke-dasharray="0 326.73" stroke-dashoffset="-306.44" transform="rotate(-90)" filter="url(#glow)"><animate attributeName="stroke-dasharray" from="0 326.73" to="18.78 326.73" dur="0.9s" begin="1.00s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/></circle>
-    <text class="big" text-anchor="middle" y="8" opacity="0">30
+    <circle r="52" fill="none" stroke="#00b8a3" stroke-width="12" stroke-dasharray="0 326.73" stroke-dashoffset="-1.50" transform="rotate(-90)" filter="url(#glow)"><animate attributeName="stroke-dasharray" from="0 326.73" to="135.61 326.73" dur="0.9s" begin="0.30s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/></circle><circle r="52" fill="none" stroke="#ffc01e" stroke-width="12" stroke-dasharray="0 326.73" stroke-dashoffset="-140.11" transform="rotate(-90)" filter="url(#glow)"><animate attributeName="stroke-dasharray" from="0 326.73" to="165.31 326.73" dur="0.9s" begin="0.65s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/></circle><circle r="52" fill="none" stroke="#ff375f" stroke-width="12" stroke-dasharray="0 326.73" stroke-dashoffset="-308.42" transform="rotate(-90)" filter="url(#glow)"><animate attributeName="stroke-dasharray" from="0 326.73" to="16.80 326.73" dur="0.9s" begin="1.00s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/></circle>
+    <text class="big" text-anchor="middle" y="8" opacity="0">33
       <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.6s" fill="freeze"/>
     </text>
     <text class="sub" text-anchor="middle" y="30">SOLVED</text>
@@ -44,33 +44,33 @@
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.3s" fill="freeze"/>
     <circle cx="236" cy="73" r="4" fill="#00b8a3"><animate attributeName="r" values="3;5.5;3" dur="2s" repeatCount="indefinite"/></circle>
     <text x="250" y="64" class="lbl">Easy</text>
-    <text x="642" y="64" text-anchor="end" class="pct" fill="#00b8a3">46.7%</text>
+    <text x="642" y="64" text-anchor="end" class="pct" fill="#00b8a3">42.4%</text>
     <text x="720" y="64" text-anchor="end" class="cnt">14 solved</text>
     <rect x="250" y="72" width="470" height="14" rx="7" fill="#21262d"/>
     <rect x="250" y="72" width="0" height="14" rx="7" fill="#00b8a3" filter="url(#glow)">
-      <animate attributeName="width" from="0" to="219.3" dur="1.4s" begin="0.3s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/>
+      <animate attributeName="width" from="0" to="199.4" dur="1.4s" begin="0.3s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/>
     </rect>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.55s" fill="freeze"/>
     <circle cx="236" cy="125" r="4" fill="#ffc01e"><animate attributeName="r" values="3;5.5;3" dur="2s" repeatCount="indefinite"/></circle>
     <text x="250" y="116" class="lbl">Medium</text>
-    <text x="642" y="116" text-anchor="end" class="pct" fill="#ffc01e">46.7%</text>
-    <text x="720" y="116" text-anchor="end" class="cnt">14 solved</text>
+    <text x="642" y="116" text-anchor="end" class="pct" fill="#ffc01e">51.5%</text>
+    <text x="720" y="116" text-anchor="end" class="cnt">17 solved</text>
     <rect x="250" y="124" width="470" height="14" rx="7" fill="#21262d"/>
     <rect x="250" y="124" width="0" height="14" rx="7" fill="#ffc01e" filter="url(#glow)">
-      <animate attributeName="width" from="0" to="219.3" dur="1.4s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/>
+      <animate attributeName="width" from="0" to="242.1" dur="1.4s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/>
     </rect>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.8s" fill="freeze"/>
     <circle cx="236" cy="177" r="4" fill="#ff375f"><animate attributeName="r" values="3;5.5;3" dur="2s" repeatCount="indefinite"/></circle>
     <text x="250" y="168" class="lbl">Hard</text>
-    <text x="642" y="168" text-anchor="end" class="pct" fill="#ff375f">6.7%</text>
+    <text x="642" y="168" text-anchor="end" class="pct" fill="#ff375f">6.1%</text>
     <text x="720" y="168" text-anchor="end" class="cnt">2 solved</text>
     <rect x="250" y="176" width="470" height="14" rx="7" fill="#21262d"/>
     <rect x="250" y="176" width="0" height="14" rx="7" fill="#ff375f" filter="url(#glow)">
-      <animate attributeName="width" from="0" to="31.3" dur="1.4s" begin="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/>
+      <animate attributeName="width" from="0" to="28.5" dur="1.4s" begin="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.2 0.8 0.2 1"/>
     </rect>
   </g>
 </svg>
