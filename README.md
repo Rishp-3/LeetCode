@@ -29,15 +29,18 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 14 | 17 | 2 | 33 |
+| 19 | 19 | 2 | 40 |
 
 
-## Easy (14)
+## Easy (19)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
+| 1 | [Two Sum](Easy/1.TwoSum) | Array, Hash Table | [Java](Easy/1.TwoSum/Solution.java) | 2026-11-11 |
+| 9 | [Palindrome Number](Easy/9.PalindromeNumber) | Math | [Java](Easy/9.PalindromeNumber/Solution.java) | 2026-11-11 |
 | 26 | [Remove Duplicates from Sorted Array](Easy/26.RemoveDuplicatesFromSortedArray) | Array, Two Pointers | [Java](Easy/26.RemoveDuplicatesFromSortedArray/Solution.java) | 2026-11-07 |
 | 104 | [Maximum Depth of Binary Tree](Easy/104.MaximumDepthOfBinaryTree) | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [Java](Easy/104.MaximumDepthOfBinaryTree/Solution.java) | 2026-11-05 |
+| 136 | [Single Number](Easy/136.SingleNumber) | Array, Bit Manipulation | [Java](Easy/136.SingleNumber/Solution.java) | 2026-11-10 |
 | 206 | [Reverse Linked List](Easy/206.ReverseLinkedList) | Linked List, Recursion | [Java](Easy/206.ReverseLinkedList/Solution.java) | 2026-11-04 |
 | 283 | [Move Zeroes](Easy/283.MoveZeroes) | Array, Two Pointers | [Java](Easy/283.MoveZeroes/Solution.java) | 2026-10-31 |
 | 338 | [Counting Bits](Easy/338.CountingBits) | Dynamic Programming, Bit Manipulation | [Java](Easy/338.CountingBits/Solution.java) | 2026-11-05 |
@@ -48,16 +51,20 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 724 | [Find Pivot Index](Easy/724.FindPivotIndex) | Array, Prefix Sum | [Java](Easy/724.FindPivotIndex/Solution.java) | 2026-11-04 |
 | 1071 | [Greatest Common Divisor of Strings](Easy/1071.GreatestCommonDivisorOfStrings) | Math, String, Euclidean Algorithm, Greatest Common Divisor | [Java](Easy/1071.GreatestCommonDivisorOfStrings/Solution.java) | 2026-10-31 |
 | 1431 | [Kids With the Greatest Number of Candies](Easy/1431.KidsWithTheGreatestNumberOfCandies) | Array | [Java](Easy/1431.KidsWithTheGreatestNumberOfCandies/Solution.java) | 2026-10-30 |
+| 1480 | [Running Sum of 1d Array](Easy/1480.RunningSumOf1DArray) | Array, Prefix Sum | [Java](Easy/1480.RunningSumOf1DArray/Solution.java) | 2026-11-11 |
+| 1732 | [Find the Highest Altitude](Easy/1732.FindTheHighestAltitude) | Array, Prefix Sum | [Java](Easy/1732.FindTheHighestAltitude/Solution.java) | 2026-11-10 |
 | 1768 | [Merge Strings Alternately](Easy/1768.MergeStringsAlternately) | Two Pointers, String | [Java](Easy/1768.MergeStringsAlternately/Solution.java) | 2026-10-30 |
 | 2215 | [Find the Difference of Two Arrays](Easy/2215.FindTheDifferenceOfTwoArrays) | Array, Hash Table | [Java](Easy/2215.FindTheDifferenceOfTwoArrays/Solution.java) | 2026-11-04 |
 
-## Medium (17)
+## Medium (19)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
 | 2 | [Add Two Numbers](Medium/2.AddTwoNumbers) | Linked List, Math, Recursion | [Java](Medium/2.AddTwoNumbers/Solution.java) | 2026-10-31 |
 | 11 | [Container With Most Water](Medium/11.ContainerWithMostWater) | Array, Two Pointers, Greedy | [Java](Medium/11.ContainerWithMostWater/Solution.java) | 2026-11-02 |
+| 15 | [3Sum](Medium/15.3Sum) | Array, Two Pointers, Sorting | [Java](Medium/15.3Sum/Solution.java) | 2026-11-11 |
 | 50 | [Pow(x, n)](Medium/50.PowXN) | Math, Recursion | [Java](Medium/50.PowXN/Solution.java) | 2026-11-09 |
+| 75 | [Sort Colors](Medium/75.SortColors) | Array, Two Pointers, Sorting, Quicksort, Bubble Sort | [Java](Medium/75.SortColors/Solution.java) | 2026-11-11 |
 | 122 | [Best Time to Buy and Sell Stock II](Medium/122.BestTimeToBuyAndSellStockIi) | Array, Dynamic Programming, Greedy | [Java](Medium/122.BestTimeToBuyAndSellStockIi/Solution.java) | 2026-11-05 |
 | 151 | [Reverse Words in a String](Medium/151.ReverseWordsInAString) | Two Pointers, String | [Java](Medium/151.ReverseWordsInAString/Solution.java) | 2026-11-01 |
 | 238 | [Product of Array Except Self](Medium/238.ProductOfArrayExceptSelf) | Array, Prefix Sum | [Java](Medium/238.ProductOfArrayExceptSelf/Solution.java) | 2026-11-09 |
