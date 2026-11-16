@@ -29,16 +29,18 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 19 | 19 | 2 | 40 |
+| 22 | 21 | 2 | 45 |
 
 
-## Easy (19)
+## Easy (22)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
 | 1 | [Two Sum](Easy/1.TwoSum) | Array, Hash Table | [Java](Easy/1.TwoSum/Solution.java) | 2026-11-11 |
 | 9 | [Palindrome Number](Easy/9.PalindromeNumber) | Math | [Java](Easy/9.PalindromeNumber/Solution.java) | 2026-11-11 |
 | 26 | [Remove Duplicates from Sorted Array](Easy/26.RemoveDuplicatesFromSortedArray) | Array, Two Pointers | [Java](Easy/26.RemoveDuplicatesFromSortedArray/Solution.java) | 2026-11-07 |
+| 94 | [Binary Tree Inorder Traversal](Easy/94.BinaryTreeInorderTraversal) | Stack, Tree, Depth-First Search, Binary Tree | [Java](Easy/94.BinaryTreeInorderTraversal/Solution.java) | 2026-11-15 |
+| 100 | [Same Tree](Easy/100.SameTree) | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [Java](Easy/100.SameTree/Solution.java) | 2026-11-15 |
 | 104 | [Maximum Depth of Binary Tree](Easy/104.MaximumDepthOfBinaryTree) | Tree, Depth-First Search, Breadth-First Search, Binary Tree | [Java](Easy/104.MaximumDepthOfBinaryTree/Solution.java) | 2026-11-05 |
 | 136 | [Single Number](Easy/136.SingleNumber) | Array, Bit Manipulation | [Java](Easy/136.SingleNumber/Solution.java) | 2026-11-10 |
 | 206 | [Reverse Linked List](Easy/206.ReverseLinkedList) | Linked List, Recursion | [Java](Easy/206.ReverseLinkedList/Solution.java) | 2026-11-04 |
@@ -55,8 +57,9 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 1732 | [Find the Highest Altitude](Easy/1732.FindTheHighestAltitude) | Array, Prefix Sum | [Java](Easy/1732.FindTheHighestAltitude/Solution.java) | 2026-11-10 |
 | 1768 | [Merge Strings Alternately](Easy/1768.MergeStringsAlternately) | Two Pointers, String | [Java](Easy/1768.MergeStringsAlternately/Solution.java) | 2026-10-30 |
 | 2215 | [Find the Difference of Two Arrays](Easy/2215.FindTheDifferenceOfTwoArrays) | Array, Hash Table | [Java](Easy/2215.FindTheDifferenceOfTwoArrays/Solution.java) | 2026-11-04 |
+| 4111 | [Count Consistent Subarrays I](Easy/4111.CountConsistentSubarraysI) | - | [Java](Easy/4111.CountConsistentSubarraysI/Solution.java) | 2026-11-15 |
 
-## Medium (19)
+## Medium (21)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
@@ -79,6 +82,8 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 2095 | [Delete the Middle Node of a Linked List](Medium/2095.DeleteTheMiddleNodeOfALinkedList) | Linked List, Two Pointers | [Java](Medium/2095.DeleteTheMiddleNodeOfALinkedList/Solution.java) | 2026-11-03 |
 | 2130 | [Maximum Twin Sum of a Linked List](Medium/2130.MaximumTwinSumOfALinkedList) | Linked List, Two Pointers, Stack | [Java](Medium/2130.MaximumTwinSumOfALinkedList/Solution.java) | 2026-11-04 |
 | 2390 | [Removing Stars From a String](Medium/2390.RemovingStarsFromAString) | String, Stack, Simulation | [Java](Medium/2390.RemovingStarsFromAString/Solution.java) | 2026-11-03 |
+| 4112 | [Maximize Score After Zeroing Subtrees](Medium/4112.MaximizeScoreAfterZeroingSubtrees) | - | [Java](Medium/4112.MaximizeScoreAfterZeroingSubtrees/Solution.java) | 2026-11-15 |
+| 4113 | [Game of Divisible Sums](Medium/4113.GameOfDivisibleSums) | - | [Java](Medium/4113.GameOfDivisibleSums/Solution.java) | 2026-11-15 |
 
 ## Hard (2)
 
