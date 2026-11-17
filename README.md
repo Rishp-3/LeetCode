@@ -29,10 +29,10 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 22 | 21 | 2 | 45 |
+| 24 | 21 | 2 | 47 |
 
 
-## Easy (22)
+## Easy (24)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
@@ -54,9 +54,11 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 1071 | [Greatest Common Divisor of Strings](Easy/1071.GreatestCommonDivisorOfStrings) | Math, String, Euclidean Algorithm, Greatest Common Divisor | [Java](Easy/1071.GreatestCommonDivisorOfStrings/Solution.java) | 2026-10-31 |
 | 1431 | [Kids With the Greatest Number of Candies](Easy/1431.KidsWithTheGreatestNumberOfCandies) | Array | [Java](Easy/1431.KidsWithTheGreatestNumberOfCandies/Solution.java) | 2026-10-30 |
 | 1480 | [Running Sum of 1d Array](Easy/1480.RunningSumOf1DArray) | Array, Prefix Sum | [Java](Easy/1480.RunningSumOf1DArray/Solution.java) | 2026-11-11 |
+| 1672 | [Richest Customer Wealth](Easy/1672.RichestCustomerWealth) | Array, Matrix | [Java](Easy/1672.RichestCustomerWealth/Solution.java) | 2026-11-16 |
 | 1732 | [Find the Highest Altitude](Easy/1732.FindTheHighestAltitude) | Array, Prefix Sum | [Java](Easy/1732.FindTheHighestAltitude/Solution.java) | 2026-11-10 |
 | 1768 | [Merge Strings Alternately](Easy/1768.MergeStringsAlternately) | Two Pointers, String | [Java](Easy/1768.MergeStringsAlternately/Solution.java) | 2026-10-30 |
 | 2215 | [Find the Difference of Two Arrays](Easy/2215.FindTheDifferenceOfTwoArrays) | Array, Hash Table | [Java](Easy/2215.FindTheDifferenceOfTwoArrays/Solution.java) | 2026-11-04 |
+| 2243 | [Calculate Digit Sum of a String](Easy/2243.CalculateDigitSumOfAString) | String, Simulation | [Java](Easy/2243.CalculateDigitSumOfAString/Solution.java) | 2026-11-16 |
 | 4111 | [Count Consistent Subarrays I](Easy/4111.CountConsistentSubarraysI) | - | [Java](Easy/4111.CountConsistentSubarraysI/Solution.java) | 2026-11-15 |
 
 ## Medium (21)

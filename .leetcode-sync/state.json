@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2196351163,
+  "last_submission_id": 2197363318,
   "problems": {
     "1": {
       "description": "You are given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.\n\nYou may assume that each input would have ***exactly* one solution**, and you may not use the *same* element twice.\n\nYou can return the answer in any order.\n\n**Example 1:**\n\n**Input:** `nums = [2,7,11,15], target = 9`\n\n**Output:** `[0,1]`\n\n**Explanation:**\n\nThe sum of `nums[0]` and `nums[1]` is `2 + 7 = 9`, which equals the target. Therefore, the indices `[0, 1]` are returned.\n\n**Example 2:**\n\n**Input:** `nums = [3,2,4], target = 6`\n\n**Output:** `[1,2]`\n\n**Explanation:**\n\nThe sum of `nums[1]` and `nums[2]` is `2 + 4 = 6`, which equals the target. Therefore, the indices `[1, 2]` are returned.\n\n**Example 3:**\n\n**Input:** `nums = [3,3], target = 6`\n\n**Output:** `[0,1]`\n\n**Explanation:**\n\nThe sum of `nums[0]` and `nums[1]` is `3 + 3 = 6`, which equals the target. Therefore, the indices `[0, 1]` are returned.\n\n**Constraints:**\n\n- `2 <= nums.length <= 10^4`\n- `-10^9 <= nums[i] <= 10^9`\n- `-10^9 <= target <= 10^9`\n- **Only one valid answer exists.**\n\n **Follow-up: **Can you come up with an algorithm that is less than `O(n^2)` time complexity?",
@@ -153,6 +153,18 @@
         "String"
       ]
     },
+    "1672": {
+      "description": "You are given an `m x n` integer grid `accounts` where `accounts[i][j]` is the amount of money the `i\u200b\u200b\u200b\u200b\u200b^\u200b\u200b\u200b\u200b\u200b\u200bth\u200b\u200b\u200b\u200b` customer has in the `j\u200b\u200b\u200b\u200b\u200b^\u200b\u200b\u200b\u200b\u200b\u200bth`\u200b\u200b\u200b\u200b bank. Return* the **wealth** that the richest customer has.*\n\nA customer's **wealth** is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum **wealth**.\n\n**Example 1:**\n\n```text\n\nInput: accounts = [[1,2,3],[3,2,1]]\nOutput: 6\nExplanation:\n1st customer has wealth = 1 + 2 + 3 = 6\n2nd customer has wealth = 3 + 2 + 1 = 6\nBoth customers are considered the richest with a wealth of 6 each, so return 6.\n\n```\n\n**Example 2:**\n\n```text\n\nInput: accounts = [[1,5],[7,3],[3,5]]\nOutput: 10\nExplanation:\n1st customer has wealth = 6\n2nd customer has wealth = 10\n3rd customer has wealth = 8\nThe 2nd customer is the richest with a wealth of 10.\n```\n\n**Example 3:**\n\n```text\n\nInput: accounts = [[2,8,7],[7,1,3],[1,9,5]]\nOutput: 17\n\n```\n\n**Constraints:**\n\n- `m == accounts.length`\n- `n == accounts[i].length`\n- `1 <= m, n <= 50`\n- `1 <= accounts[i][j] <= 100`",
+      "difficulty": "Easy",
+      "first_solved": "2026-11-16",
+      "id": 1672,
+      "slug": "richest-customer-wealth",
+      "title": "Richest Customer Wealth",
+      "topics": [
+        "Array",
+        "Matrix"
+      ]
+    },
     "1679": {
       "description": "You are given an integer array `nums` and an integer `k`.\n\nIn one operation, you can pick two numbers from the array whose sum equals `k` and remove them from the array.\n\nReturn *the maximum number of operations you can perform on the array*.\n\n**Example 1:**\n\n```text\n\nInput: nums = [1,2,3,4], k = 5\nOutput: 2\nExplanation: Starting with nums = [1,2,3,4]:\n- Remove numbers 1 and 4, then nums = [2,3]\n- Remove numbers 2 and 3, then nums = []\nThere are no more pairs that sum up to 5, hence a total of 2 operations.\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [3,1,3,4,3], k = 6\nOutput: 1\nExplanation: Starting with nums = [3,1,3,4,3]:\n- Remove the first two 3's, then nums = [1,4,3]\nThere are no more pairs that sum up to 6, hence a total of 1 operation.\n```\n\n**Constraints:**\n\n- `1 <= nums.length <= 10^5`\n- `1 <= nums[i] <= 10^9`\n- `1 <= k <= 10^9`",
       "difficulty": "Medium",
@@ -251,6 +263,18 @@
       "topics": [
         "Array",
         "Hash Table"
+      ]
+    },
+    "2243": {
+      "description": "You are given a string `s` consisting of digits and an integer `k`.\n\nA **round** can be completed if the length of `s` is greater than `k`. In one round, do the following:\n\n- **Divide** `s` into **consecutive groups** of size `k` such that the first `k` characters are in the first group, the next `k` characters are in the second group, and so on. **Note** that the size of the last group can be smaller than `k`.\n- **Replace** each group of `s` with a string representing the sum of all its digits. For example, `\"346\"` is replaced with `\"13\"` because `3 + 4 + 6 = 13`.\n- **Merge** consecutive groups together to form a new string. If the length of the string is greater than `k`, repeat from step `1`.\n\nReturn `s` *after all rounds have been completed*.\n\n**Example 1:**\n\n```text\n\nInput: s = \"11111222223\", k = 3\nOutput: \"135\"\nExplanation:\n- For the first round, we divide s into groups of size 3: \"111\", \"112\", \"222\", and \"23\".\n  \u200b\u200b\u200b\u200b\u200bThen we calculate the digit sum of each group: 1 + 1 + 1 = 3, 1 + 1 + 2 = 4, 2 + 2 + 2 = 6, and 2 + 3 = 5.\n  So, s becomes \"3\" + \"4\" + \"6\" + \"5\" = \"3465\" after the first round.\n- For the second round, we divide s into \"346\" and \"5\".\n  Then we calculate the digit sum of each group: 3 + 4 + 6 = 13, 5 = 5.\n  So, s becomes \"13\" + \"5\" = \"135\" after second round.\nNow, s.length <= k, so we return \"135\" as the answer.\n\n```\n\n**Example 2:**\n\n```text\n\nInput: s = \"00000000\", k = 3\nOutput: \"000\"\nExplanation:\nWe divide s into \"000\", \"000\", and \"00\".\nThen we calculate the digit sum of each group: 0 + 0 + 0 = 0, 0 + 0 + 0 = 0, and 0 + 0 = 0.\ns becomes \"0\" + \"0\" + \"0\" = \"000\", whose length is equal to k, so we return \"000\".\n\n```\n\n**Constraints:**\n\n- `1 <= s.length <= 100`\n- `2 <= k <= 100`\n- `s` consists of digits only.",
+      "difficulty": "Easy",
+      "first_solved": "2026-11-16",
+      "id": 2243,
+      "slug": "calculate-digit-sum-of-a-string",
+      "title": "Calculate Digit Sum of a String",
+      "topics": [
+        "String",
+        "Simulation"
       ]
     },
     "238": {
@@ -564,6 +588,7 @@
     "best-time-to-buy-and-sell-stock-ii": "122",
     "best-time-to-buy-and-sell-stock-with-transaction-fee": "714",
     "binary-tree-inorder-traversal": "94",
+    "calculate-digit-sum-of-a-string": "2243",
     "can-place-flowers": "605",
     "container-with-most-water": "11",
     "count-consistent-subarrays-i": "4111",
@@ -596,6 +621,7 @@
     "reverse-linked-list": "206",
     "reverse-vowels-of-a-string": "345",
     "reverse-words-in-a-string": "151",
+    "richest-customer-wealth": "1672",
     "running-sum-of-1d-array": "1480",
     "same-tree": "100",
     "single-number": "136",
