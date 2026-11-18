@@ -29,10 +29,10 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 24 | 21 | 2 | 47 |
+| 27 | 21 | 2 | 50 |
 
 
-## Easy (24)
+## Easy (27)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
@@ -48,10 +48,13 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 338 | [Counting Bits](Easy/338.CountingBits) | Dynamic Programming, Bit Manipulation | [Java](Easy/338.CountingBits/Solution.java) | 2026-11-05 |
 | 345 | [Reverse Vowels of a String](Easy/345.ReverseVowelsOfAString) | Two Pointers, String | [Java](Easy/345.ReverseVowelsOfAString/Solution.java) | 2026-11-01 |
 | 392 | [Is Subsequence](Easy/392.IsSubsequence) | Two Pointers, String, Dynamic Programming | [Java](Easy/392.IsSubsequence/Solution.java) | 2026-11-02 |
+| 412 | [Fizz Buzz](Easy/412.FizzBuzz) | Math, String, Simulation | [Java](Easy/412.FizzBuzz/Solution.java) | 2026-11-17 |
 | 605 | [Can Place Flowers](Easy/605.CanPlaceFlowers) | Array, Greedy | [Java](Easy/605.CanPlaceFlowers/Solution.java) | 2026-10-30 |
 | 643 | [Maximum Average Subarray I](Easy/643.MaximumAverageSubarrayI) | Array, Sliding Window | [Java](Easy/643.MaximumAverageSubarrayI/Solution.java) | 2026-11-02 |
 | 724 | [Find Pivot Index](Easy/724.FindPivotIndex) | Array, Prefix Sum | [Java](Easy/724.FindPivotIndex/Solution.java) | 2026-11-04 |
+| 876 | [Middle of the Linked List](Easy/876.MiddleOfTheLinkedList) | Linked List, Two Pointers | [Java](Easy/876.MiddleOfTheLinkedList/Solution.java) | 2026-11-17 |
 | 1071 | [Greatest Common Divisor of Strings](Easy/1071.GreatestCommonDivisorOfStrings) | Math, String, Euclidean Algorithm, Greatest Common Divisor | [Java](Easy/1071.GreatestCommonDivisorOfStrings/Solution.java) | 2026-10-31 |
+| 1342 | [Number of Steps to Reduce a Number to Zero](Easy/1342.NumberOfStepsToReduceANumberToZero) | Math, Bit Manipulation | [Java](Easy/1342.NumberOfStepsToReduceANumberToZero/Solution.java) | 2026-11-17 |
 | 1431 | [Kids With the Greatest Number of Candies](Easy/1431.KidsWithTheGreatestNumberOfCandies) | Array | [Java](Easy/1431.KidsWithTheGreatestNumberOfCandies/Solution.java) | 2026-10-30 |
 | 1480 | [Running Sum of 1d Array](Easy/1480.RunningSumOf1DArray) | Array, Prefix Sum | [Java](Easy/1480.RunningSumOf1DArray/Solution.java) | 2026-11-11 |
 | 1672 | [Richest Customer Wealth](Easy/1672.RichestCustomerWealth) | Array, Matrix | [Java](Easy/1672.RichestCustomerWealth/Solution.java) | 2026-11-16 |
