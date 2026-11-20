@@ -29,7 +29,7 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 
 | Easy | Medium | Hard | Total |
 | :---: | :---: | :---: | :---: |
-| 27 | 21 | 2 | 50 |
+| 27 | 22 | 2 | 51 |
 
 
 ## Easy (27)
@@ -64,13 +64,14 @@ My LeetCode practice in Java. Every problem has its own folder with a `README`, 
 | 2243 | [Calculate Digit Sum of a String](Easy/2243.CalculateDigitSumOfAString) | String, Simulation | [Java](Easy/2243.CalculateDigitSumOfAString/Solution.java) | 2026-11-16 |
 | 4111 | [Count Consistent Subarrays I](Easy/4111.CountConsistentSubarraysI) | - | [Java](Easy/4111.CountConsistentSubarraysI/Solution.java) | 2026-11-15 |
 
-## Medium (21)
+## Medium (22)
 
 | # | Title | Topics | Solution | First solved |
 | ---: | --- | --- | :---: | :---: |
 | 2 | [Add Two Numbers](Medium/2.AddTwoNumbers) | Linked List, Math, Recursion | [Java](Medium/2.AddTwoNumbers/Solution.java) | 2026-10-31 |
 | 11 | [Container With Most Water](Medium/11.ContainerWithMostWater) | Array, Two Pointers, Greedy | [Java](Medium/11.ContainerWithMostWater/Solution.java) | 2026-11-02 |
 | 15 | [3Sum](Medium/15.3Sum) | Array, Two Pointers, Sorting | [Java](Medium/15.3Sum/Solution.java) | 2026-11-11 |
+| 16 | [3Sum Closest](Medium/16.3SumClosest) | Array, Two Pointers, Sorting | [Java](Medium/16.3SumClosest/Solution.java) | 2026-11-19 |
 | 50 | [Pow(x, n)](Medium/50.PowXN) | Math, Recursion | [Java](Medium/50.PowXN/Solution.java) | 2026-11-09 |
 | 75 | [Sort Colors](Medium/75.SortColors) | Array, Two Pointers, Sorting, Quicksort, Bubble Sort | [Java](Medium/75.SortColors/Solution.java) | 2026-11-11 |
 | 122 | [Best Time to Buy and Sell Stock II](Medium/122.BestTimeToBuyAndSellStockIi) | Array, Dynamic Programming, Greedy | [Java](Medium/122.BestTimeToBuyAndSellStockIi/Solution.java) | 2026-11-05 |

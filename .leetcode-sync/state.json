@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2198047650,
+  "last_submission_id": 2199458886,
   "problems": {
     "1": {
       "description": "You are given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.\n\nYou may assume that each input would have ***exactly* one solution**, and you may not use the *same* element twice.\n\nYou can return the answer in any order.\n\n**Example 1:**\n\n**Input:** `nums = [2,7,11,15], target = 9`\n\n**Output:** `[0,1]`\n\n**Explanation:**\n\nThe sum of `nums[0]` and `nums[1]` is `2 + 7 = 9`, which equals the target. Therefore, the indices `[0, 1]` are returned.\n\n**Example 2:**\n\n**Input:** `nums = [3,2,4], target = 6`\n\n**Output:** `[1,2]`\n\n**Explanation:**\n\nThe sum of `nums[1]` and `nums[2]` is `2 + 4 = 6`, which equals the target. Therefore, the indices `[1, 2]` are returned.\n\n**Example 3:**\n\n**Input:** `nums = [3,3], target = 6`\n\n**Output:** `[0,1]`\n\n**Explanation:**\n\nThe sum of `nums[0]` and `nums[1]` is `3 + 3 = 6`, which equals the target. Therefore, the indices `[0, 1]` are returned.\n\n**Constraints:**\n\n- `2 <= nums.length <= 10^4`\n- `-10^9 <= nums[i] <= 10^9`\n- `-10^9 <= target <= 10^9`\n- **Only one valid answer exists.**\n\n **Follow-up: **Can you come up with an algorithm that is less than `O(n^2)` time complexity?",
@@ -163,6 +163,19 @@
       "topics": [
         "Two Pointers",
         "String"
+      ]
+    },
+    "16": {
+      "description": "You are given an integer array `nums` of length `n` and an integer `target`.\n\nFind three integers at **distinct indices** in `nums` such that the sum is **closest** to `target`.\n\nReturn the sum of the three integers.\n\nYou may assume that each input would have **exactly** one solution.\n\n**Example 1:**\n\n```text\n\nInput: nums = [-1,2,1,-4], target = 1\nOutput: 2\nExplanation: The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).\n\n```\n\n**Example 2:**\n\n```text\n\nInput: nums = [0,0,0], target = 1\nOutput: 0\nExplanation: The sum that is closest to the target is 0. (0 + 0 + 0 = 0).\n\n```\n\n**Constraints:**\n\n- `3 <= nums.length <= 500`\n- `-1000 <= nums[i] <= 1000`\n- `-10^4 <= target <= 10^4`",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-19",
+      "id": 16,
+      "slug": "3sum-closest",
+      "title": "3Sum Closest",
+      "topics": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
       ]
     },
     "1672": {
@@ -620,6 +633,7 @@
   },
   "slugs": {
     "3sum": "15",
+    "3sum-closest": "16",
     "add-two-numbers": "2",
     "asteroid-collision": "735",
     "best-time-to-buy-and-sell-stock-ii": "122",
