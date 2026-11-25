@@ -1,5 +1,5 @@
 {
-  "last_submission_id": 2199458886,
+  "last_submission_id": 2202943067,
   "problems": {
     "1": {
       "description": "You are given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.\n\nYou may assume that each input would have ***exactly* one solution**, and you may not use the *same* element twice.\n\nYou can return the answer in any order.\n\n**Example 1:**\n\n**Input:** `nums = [2,7,11,15], target = 9`\n\n**Output:** `[0,1]`\n\n**Explanation:**\n\nThe sum of `nums[0]` and `nums[1]` is `2 + 7 = 9`, which equals the target. Therefore, the indices `[0, 1]` are returned.\n\n**Example 2:**\n\n**Input:** `nums = [3,2,4], target = 6`\n\n**Output:** `[1,2]`\n\n**Explanation:**\n\nThe sum of `nums[1]` and `nums[2]` is `2 + 4 = 6`, which equals the target. Therefore, the indices `[1, 2]` are returned.\n\n**Example 3:**\n\n**Input:** `nums = [3,3], target = 6`\n\n**Output:** `[0,1]`\n\n**Explanation:**\n\nThe sum of `nums[0]` and `nums[1]` is `3 + 3 = 6`, which equals the target. Therefore, the indices `[0, 1]` are returned.\n\n**Constraints:**\n\n- `2 <= nums.length <= 10^4`\n- `-10^9 <= nums[i] <= 10^9`\n- `-10^9 <= target <= 10^9`\n- **Only one valid answer exists.**\n\n **Follow-up: **Can you come up with an algorithm that is less than `O(n^2)` time complexity?",
@@ -387,6 +387,18 @@
         "Bit Manipulation"
       ]
     },
+    "34": {
+      "description": "Given an array of integers `nums` sorted in non-decreasing order, find the starting and ending position of a given `target` value.\n\nIf `target` is not found in the array, return `[-1, -1]`.\n\nYou must write an algorithm with `O(log n)` runtime complexity.\n\n**Example 1:**\n\n```text\nInput: nums = [5,7,7,8,8,10], target = 8\nOutput: [3,4]\n\n```\n\n**Example 2:**\n\n```text\nInput: nums = [5,7,7,8,8,10], target = 6\nOutput: [-1,-1]\n\n```\n\n**Example 3:**\n\n```text\nInput: nums = [], target = 0\nOutput: [-1,-1]\n\n```\n\n**Constraints:**\n\n- `0 <= nums.length <= 10^5`\n- `-10^9 <= nums[i] <= 10^9`\n- `nums` is a non-decreasing array.\n- `-10^9 <= target <= 10^9`",
+      "difficulty": "Medium",
+      "first_solved": "2026-11-25",
+      "id": 34,
+      "slug": "find-first-and-last-position-of-element-in-sorted-array",
+      "title": "Find First and Last Position of Element in Sorted Array",
+      "topics": [
+        "Array",
+        "Binary Search"
+      ]
+    },
     "345": {
       "description": "Given a string `s`, reverse only all the vowels in the string and return it.\n\nThe vowels are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`, and they can appear in both lower and upper cases, more than once.\n\n**Example 1:**\n\n**Input:** s = \"IceCreAm\"\n\n**Output:** \"AceCreIm\"\n\n**Explanation:**\n\nThe vowels in `s` are `['I', 'e', 'e', 'A']`. On reversing the vowels, s becomes `\"AceCreIm\"`.\n\n**Example 2:**\n\n**Input:** s = \"leetcode\"\n\n**Output:** \"leotcede\"\n\n**Constraints:**\n\n- `1 <= s.length <= 3 * 10^5`\n- `s` consist of **printable ASCII** characters.",
       "difficulty": "Easy",
@@ -646,6 +658,7 @@
     "counting-bits": "338",
     "decode-string": "394",
     "delete-the-middle-node-of-a-linked-list": "2095",
+    "find-first-and-last-position-of-element-in-sorted-array": "34",
     "find-pivot-index": "724",
     "find-the-difference-of-two-arrays": "2215",
     "find-the-highest-altitude": "1732",
